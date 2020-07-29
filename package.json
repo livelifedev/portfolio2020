@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"pages/**/*.js\" \"src/**/*.{js,jsx,html}\"",
+    "format": "prettier --write \"pages/**/*.{js,scss}\" \"src/**/*.{js,jsx,scss,html}\"",
     "lint": "eslint --quiet \"pages/**/*.js\" \"src/**/*.{js,jsx}\"",
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +12,8 @@
   "dependencies": {
     "next": "9.5.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
