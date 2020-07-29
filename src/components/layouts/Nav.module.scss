@@ -1,4 +1,9 @@
+@import "variables.scss";
+
 .nav {
+  height: 100px;
+  width: 100%;
+  background-color: $primary;
 }
 
 @media (max-width: 600px) {

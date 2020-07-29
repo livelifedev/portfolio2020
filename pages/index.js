@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 export default function Home() {
   return (
     <Layout>
-      <main className={styles.main}></main>
+      <section className={styles.home}>Landing</section>
     </Layout>
   );
 }

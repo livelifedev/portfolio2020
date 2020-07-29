@@ -13,7 +13,10 @@ export default function Layout({ children }) {
 
       <Nav />
 
-      {children}
+      <main className={styles.main}>
+        <section className={styles.title}>TITLE</section>
+        <section className={styles.content}>{children}</section>
+      </main>
 
       <Footer />
     </div>
