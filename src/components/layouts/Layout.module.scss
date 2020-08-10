@@ -9,10 +9,11 @@
   .main {
     display: flex;
     min-height: calc(100vh - 100px);
-    background-color: green;
+    background-color: darkgray;
 
     .title {
       flex: 0 1 15%;
+      background-color: grey;
     }
 
     .content {
