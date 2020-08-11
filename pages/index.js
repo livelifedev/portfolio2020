@@ -3,8 +3,11 @@ import styles from "./index.module.scss";
 
 export default function Home() {
   return (
-    <Layout>
-      <section className={styles.home}>Landing</section>
+    <Layout title="Web Developer">
+      <div className={styles.home}>
+        <div>Text</div>
+        <div>Artwork</div>
+      </div>
     </Layout>
   );
 }

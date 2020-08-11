@@ -1,4 +1,7 @@
 .home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
 }
 
 @media (max-width: 600px) {

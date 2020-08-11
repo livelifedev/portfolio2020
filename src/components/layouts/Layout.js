@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import styles from "./Layout.module.scss";
 
-export default function Layout({ children }) {
+export default function Layout({ title, children }) {
   return (
     <div className={styles.layout}>
       <Head>
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
       <main className={styles.main}>
         <section className={styles.title}>
-          <h1>Web Developer</h1>
+          <h1>{title}</h1>
         </section>
         <section className={styles.content}>{children}</section>
       </main>
