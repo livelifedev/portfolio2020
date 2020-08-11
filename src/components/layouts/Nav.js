@@ -4,7 +4,11 @@ import styles from "./Nav.module.scss";
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <img src="/vercel.svg" alt="Vercel Logo" />
+      <Link href="/">
+        <a>
+          <img src="/vercel.svg" alt="Vercel Logo" />
+        </a>
+      </Link>
       <ul>
         <li>
           <Link href="/about">

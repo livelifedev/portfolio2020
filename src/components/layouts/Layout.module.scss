@@ -12,8 +12,21 @@
     background-color: darkgray;
 
     .title {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: end;
       flex: 0 1 15%;
       background-color: grey;
+
+      h1 {
+        display: inline-block;
+        transform: rotate(90deg);
+        // transform-origin: 0 0;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+      }
     }
 
     .content {

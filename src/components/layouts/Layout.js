@@ -14,7 +14,9 @@ export default function Layout({ children }) {
       <Nav />
 
       <main className={styles.main}>
-        <section className={styles.title}>TITLE</section>
+        <section className={styles.title}>
+          <h1>Title</h1>
+        </section>
         <section className={styles.content}>{children}</section>
       </main>
 
