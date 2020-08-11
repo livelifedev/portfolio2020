@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
       <main className={styles.main}>
         <section className={styles.title}>
-          <h1>Title</h1>
+          <h1>Web Developer</h1>
         </section>
         <section className={styles.content}>{children}</section>
       </main>

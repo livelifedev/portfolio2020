@@ -6,7 +6,7 @@ export default function Nav() {
     <nav className={styles.nav}>
       <Link href="/">
         <a>
-          <img src="/vercel.svg" alt="Vercel Logo" />
+          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </Link>
       <ul>
