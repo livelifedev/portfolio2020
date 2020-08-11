@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 40px;
+
+  .mascot_wrapper {
+    display: inline;
+  }
+  .mascot {
+    height: 60vh;
+  }
 }
 
 @media (max-width: 600px) {
