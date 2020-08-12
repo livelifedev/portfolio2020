@@ -3,12 +3,12 @@ import styles from "./index.module.scss";
 
 export default function Home() {
   return (
-    <Layout title="Web Developer">
+    <Layout title="Welcome">
       <div className={styles.home}>
         <div>
           <div>
-            <h2>Welcome to my online profile.</h2>
-            <p>Interactive text</p>
+            <h2>I am a Web Developer && Awesome Person.</h2>
+            <p>Things I like.</p>
           </div>
           <div>
             <h3>Latest.</h3>

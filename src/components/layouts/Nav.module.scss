@@ -3,10 +3,11 @@
 .nav {
   height: 100px;
   width: 100%;
-  background-color: $primary;
+  background-color: $secondary;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
 
   .logo {
     height: 40px;
@@ -15,6 +16,7 @@
 
   ul {
     list-style: none;
+    color: $primary;
   }
 
   li {

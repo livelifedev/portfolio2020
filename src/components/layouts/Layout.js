@@ -16,6 +16,10 @@ export default function Layout({ title, children }) {
       <main className={styles.main}>
         <section className={styles.title}>
           <h1>{title}</h1>
+          <div className={styles.social}>
+            <img src="/linkedin.svg" alt="LinkedIn Logo" />
+            <img src="/github.svg" alt="GitHub Logo" />
+          </div>
         </section>
         <section className={styles.content}>{children}</section>
       </main>
