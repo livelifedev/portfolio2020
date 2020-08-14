@@ -11,9 +11,11 @@ const Carousel = () => {
   }, [embla]);
 
   return (
-    <EmblaCarouselReact>
-      <div style={{ display: "flex" }}>
-        <div style={{ minWidth: "100%" }}>Slide 1</div>
+    <EmblaCarouselReact className="embla__viewport">
+      <div className="embla__slide" style={{ display: "flex" }}>
+        <div style={{ minWidth: "100%" }}>
+          <div>Slide 1</div>
+        </div>
         <div style={{ minWidth: "100%" }}>Slide 2</div>
         <div style={{ minWidth: "100%" }}>Slide 3</div>
       </div>
