@@ -16,7 +16,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.mascot_wrapper}>
+        <div className={styles.mascotWrapper}>
           <img src="/mascot.svg" alt="Mascot" className={styles.mascot} />
         </div>
       </div>
