@@ -1,5 +1,23 @@
+@import "variables.scss";
+
 .portfolio {
   .skills {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .skillItems {
+    // margin-right: 1rem;
+    background-color: $textcolor;
+    color: $secondary;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 0.5rem 0;
+    cursor: default;
+    border-radius: 1rem;
   }
 
   .experience {

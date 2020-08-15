@@ -33,7 +33,7 @@ export default function Portfolio() {
           </p>
           <ul>
             {skills.map((skill) => (
-              <li>{skill}</li>
+              <li className={styles.skillItems}>{skill}</li>
             ))}
           </ul>
         </div>
