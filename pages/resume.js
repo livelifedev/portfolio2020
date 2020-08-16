@@ -38,26 +38,45 @@ export default function Resume() {
         </div>
 
         <div className={styles.experience}>
-          <h2>Experience / Education</h2>
-          <ul className={styles.timeline}>
-            <li>
-              <h2>Aetherworks (2020 - Present)</h2>
-              <p>Contract - Front-End Developer</p>
-            </li>
-            <li>
-              <h2>SMATA Technologies (2019 - 2020)</h2>
-              <p>Full-Time - Front-End Developer</p>
-            </li>
-            <li>
-              <h2>Rensa Health (2019)</h2>
-              <p>Contract - Front-End Developer</p>
-            </li>
-            <li>
-              <h2>SafetyCulture (2019)</h2>
-              <p>Internship - Front-End Developer</p>
-            </li>
-          </ul>
-          <div></div>
+          <div>
+            <h2>Experience</h2>
+            <ul className={styles.timeline}>
+              <li>
+                <h3>Aetherworks (2020 - Present)</h3>
+                <p>Contract - Front-End Developer</p>
+              </li>
+              <li>
+                <h3>SMATA Technologies (2019 - 2020)</h3>
+                <p>Full-Time - Front-End Developer</p>
+              </li>
+              <li>
+                <h3>Rensa Health (2019)</h3>
+                <p>Contract - Front-End Developer</p>
+              </li>
+              <li>
+                <h3>SafetyCulture (2019)</h3>
+                <p>Internship - Front-End Developer</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Education</h2>
+            <div className={styles.resume}>
+              <div>
+                <h3>Coder Academy</h3>
+                <p>Diploma of IT in Web Development</p>
+              </div>
+              <div>
+                <h3>Team Treehouse</h3>
+                <p>Front End Web Development Track</p>
+              </div>
+              <div>
+                <h3>SAE Institute</h3>
+                <p>Bachelor of Interactive Media in VFX & Animation</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
