@@ -25,6 +25,17 @@ export default function Portfolio() {
   return (
     <Layout title="Portfolio">
       <div className={styles.portfolio}>
+        <div className={styles.projects}>
+          <h2>Projects Showcase</h2>
+          <p>
+            Highlights of my time studying web development - some are from my
+            early days as a beginner and others are side projects I've done in
+            my free time, trying out new technology or exploring ideas in my
+            head.
+          </p>
+          <Carousel />
+        </div>
+
         <div className={styles.skills}>
           <h2>Skills</h2>
           <p>
@@ -39,23 +50,26 @@ export default function Portfolio() {
         </div>
 
         <div className={styles.experience}>
-          <h2>Experience</h2>
-          <p>
-            Technology, languages and frameworks I've worked with as a web
-            developer.
-          </p>
+          <h2>Experience / Education</h2>
+          <ul className={styles.timeline}>
+            <li>
+              <h2>Aetherworks (2020 - Present)</h2>
+              <p>Contract - Front-End Developer</p>
+            </li>
+            <li>
+              <h2>SMATA Technologies (2019 - 2020)</h2>
+              <p>Full-Time - Front-End Developer</p>
+            </li>
+            <li>
+              <h2>Rensa Health (2019)</h2>
+              <p>Contract - Front-End Developer</p>
+            </li>
+            <li>
+              <h2>SafetyCulture (2019)</h2>
+              <p>Internship - Front-End Developer</p>
+            </li>
+          </ul>
           <div></div>
-        </div>
-
-        <div className={styles.projects}>
-          <h2>Projects Showcase</h2>
-          <p>
-            Highlights of my time studying web development - some are from my
-            early days as a beginner and others are side projects I've done in
-            my free time, trying out new technology or exploring ideas in my
-            head.
-          </p>
-          <Carousel />
         </div>
       </div>
     </Layout>
