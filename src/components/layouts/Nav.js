@@ -21,8 +21,8 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/leisure">
-            <a>Leisure</a>
+          <Link href="/resume">
+            <a>Resume</a>
           </Link>
         </li>
         <li>
