@@ -1,4 +1,58 @@
+@import "variables.scss";
+
 .contact {
+  .emailAddress {
+    // color: $primary;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 4rem 2rem;
+    border: solid 0.1rem $primary;
+    border-radius: 0.2rem;
+
+    input,
+    textarea {
+      font-size: 1.2rem;
+      font-family: inherit;
+      padding: 0.1rem 0.3rem;
+      margin: 0.1rem;
+
+      background-color: transparent;
+      border: none;
+      border-bottom: solid 1px $primary;
+    }
+
+    input {
+      height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      height: 8rem;
+      resize: vertical;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      flex: 1 1 auto;
+    }
+  }
+
+  .submit {
+    margin-top: 1rem;
+    background-color: $textcolor;
+    color: $secondary;
+    border: none;
+    border-radius: 0.2rem;
+    // align-self: center;
+  }
 }
 
 @media (max-width: 600px) {

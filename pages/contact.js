@@ -28,46 +28,42 @@ export default function Contact() {
         <div>
           <h2>Send an Email</h2>
           <p>Feel free to contact me, my Email address is:</p>
-          <p>johnrubio93@gmail.com</p>
-          <p>You can use the form below to pre-fill your Email.</p>
+          <h3 className={styles.emailAddress}>johnrubio93@gmail.com</h3>
+          <p>
+            You can use the form below to pre-fill your default Email client.
+          </p>
 
           <form onSubmit={handleSubmit}>
-            <label>
-              First Name:
+            <div className={styles.formGroup}>
               <input
                 type="text"
                 placeholder="First Name"
                 value={firstName}
                 onChange={() => setFirstName(event.target.value)}
               />
-            </label>
-            <label>
-              Last Name:
               <input
                 type="text"
                 placeholder="Last Name"
                 value={lastName}
                 onChange={() => setLastName(event.target.value)}
               />
-            </label>
-            <label>
-              Subject:
-              <input
-                type="text"
-                placeholder="Subject"
-                value={subject}
-                onChange={() => setSubject(event.target.value)}
-              />
-            </label>
-            <label>
-              Body:
-              <textarea
-                placeholder="What is on your mind?"
-                value={body}
-                onChange={() => setBody(event.target.value)}
-              />
-            </label>
-            <input type="submit" value="Create Email" />
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              value={subject}
+              onChange={() => setSubject(event.target.value)}
+            />
+            <textarea
+              placeholder="What is on your mind?"
+              value={body}
+              onChange={() => setBody(event.target.value)}
+            />
+            <input
+              className={styles.submit}
+              type="submit"
+              value="Create Email"
+            />
           </form>
         </div>
       </div>
