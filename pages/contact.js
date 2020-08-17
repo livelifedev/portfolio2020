@@ -36,6 +36,7 @@ export default function Contact() {
               First Name:
               <input
                 type="text"
+                placeholder="First Name"
                 value={firstName}
                 onChange={() => setFirstName(event.target.value)}
               />
@@ -44,6 +45,7 @@ export default function Contact() {
               Last Name:
               <input
                 type="text"
+                placeholder="Last Name"
                 value={lastName}
                 onChange={() => setLastName(event.target.value)}
               />
@@ -52,6 +54,7 @@ export default function Contact() {
               Subject:
               <input
                 type="text"
+                placeholder="Subject"
                 value={subject}
                 onChange={() => setSubject(event.target.value)}
               />
@@ -59,6 +62,7 @@ export default function Contact() {
             <label>
               Body:
               <textarea
+                placeholder="What is on your mind?"
                 value={body}
                 onChange={() => setBody(event.target.value)}
               />
