@@ -7,7 +7,7 @@ export default function Home() {
       <div className={styles.home}>
         <div>
           <div>
-            <h2>I am a Web Developer && Awesome Person.</h2>
+            <h2>I am a Web Developer.</h2>
             <p>Things I like.</p>
           </div>
           <div>
