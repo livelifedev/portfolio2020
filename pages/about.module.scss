@@ -1,4 +1,12 @@
-.contact {
+.about {
+  .profilePhoto {
+    width: 20%;
+
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
 }
 
 @media (max-width: 600px) {
