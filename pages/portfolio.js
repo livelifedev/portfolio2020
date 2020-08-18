@@ -14,7 +14,7 @@ export default function Portfolio() {
             my free time, trying out new technology or exploring ideas in my
             head.
           </p>
-          {/* <Carousel /> */}
+          <Carousel />
         </div>
       </div>
     </Layout>
