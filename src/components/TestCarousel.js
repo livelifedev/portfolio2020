@@ -1,7 +1,7 @@
 // import { useState, useEffect, useCallback } from "react";
 // import { useEmblaCarousel } from "embla-carousel/react";
 
-export default function Carousel() {
+export default function TestCarousel() {
   // const [EmblaCarouselReact, embla] = useEmblaCarousel({ loop: false });
   // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);

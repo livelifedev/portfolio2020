@@ -1,3 +1,3 @@
-import Carousel from "./Carousel";
+import TestCarousel from "./TestCarousel";
 
-export { Carousel };
+export { TestCarousel };
