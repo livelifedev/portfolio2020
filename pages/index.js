@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <div>
             <h2>I am a Web Developer.</h2>
-            <p>Things I like.</p>
+            <p>I build things.</p>
           </div>
           <div>
             <h3>Latest.</h3>
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         <div className={styles.mascotWrapper}>
-          <img src="/mascot.svg" alt="Mascot" className={styles.mascot} />
+          <img src="/logo.svg" alt="Logo" className={styles.mascot} />
         </div>
       </div>
     </Layout>

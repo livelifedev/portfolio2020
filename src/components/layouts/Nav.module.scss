@@ -9,9 +9,19 @@
   align-items: center;
   text-transform: uppercase;
 
-  .logo {
-    height: 40px;
-    padding-left: 40px;
+  .logoHeader {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      padding-left: 40px;
+    }
+
+    span {
+      font-size: 1.4rem;
+      margin-left: 0.6rem;
+    }
   }
 
   ul {
