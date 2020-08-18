@@ -1,7 +1,7 @@
 // import { useState, useEffect, useCallback } from "react";
 // import { useEmblaCarousel } from "embla-carousel/react";
 
-const Carousel = () => {
+export default function Carousel() {
   // const [EmblaCarouselReact, embla] = useEmblaCarousel({ loop: false });
   // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
@@ -56,6 +56,4 @@ const Carousel = () => {
       </button> */}
     </div>
   );
-};
-
-export default Carousel;
+}
