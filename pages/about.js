@@ -3,6 +3,7 @@ import Layout from "../src/components/layouts/Layout";
 import styles from "./about.module.scss";
 
 export default function About() {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const [showHobbyText, setHobbyText] = useState("");
   const [selectedHobby, setSelectedHobby] = useState();
   const hobbies = [
@@ -40,7 +41,12 @@ export default function About() {
       <div className={styles.about}>
         <div className={styles.profile}>
           <div className={styles.profilePhoto}>
-            <img src="/profile.jpg" alt="Profile" />
+            <img
+              src="/profile.jpg"
+              alt="Profile"
+              onLoad={() => console.log("run onload") || setImageLoaded(true)}
+            />
+            {!imageLoaded && <div className={styles.placeholder}></div>}
           </div>
           <div className={styles.bioText}>
             <h2>A Short Bio</h2>

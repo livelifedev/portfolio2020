@@ -8,10 +8,12 @@
 
   .profilePhoto {
     flex: 1;
+    position: relative;
 
     img {
       width: 100%;
       border-radius: 100%;
+      position: absolute;
     }
   }
 
@@ -19,6 +21,13 @@
     text-align: justify;
     flex: 2;
     padding: 0 2rem;
+  }
+
+  .placeholder {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 100%;
+    background-color: $primary;
   }
 }
 
