@@ -1,5 +1,5 @@
 import Layout from "../src/components/layouts/Layout";
-import Carousel from "../src/components/Carousel";
+import { Carousel } from "../src/components";
 import styles from "./portfolio.module.scss";
 
 export default function Portfolio() {
