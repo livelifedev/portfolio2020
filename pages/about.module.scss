@@ -1,6 +1,8 @@
 .about {
-  display: flex;
-  align-items: center;
+  .profile {
+    display: flex;
+    align-items: center;
+  }
 
   .profilePhoto {
     flex: 1;
