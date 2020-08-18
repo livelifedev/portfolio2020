@@ -44,7 +44,7 @@ export default function About() {
           </div>
           <div className={styles.bioText}>
             <h2>A Short Bio</h2>
-            <hr></hr>
+            <div className="divider" />
             <p>
               Tech nerd, animation grad, curious mind, I'm many things. Spent
               the last few years of my life backpacking the world and now I

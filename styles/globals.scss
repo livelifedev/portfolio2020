@@ -22,6 +22,13 @@ a {
   box-sizing: border-box;
 }
 
+.divider {
+  border-bottom: solid 0.1rem $primary;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .embla {
   position: relative;
   // background-color: #f7f7f7;
