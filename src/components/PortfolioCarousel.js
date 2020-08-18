@@ -1,28 +1,28 @@
-// import { useState, useEffect, useCallback } from "react";
-// import { useEmblaCarousel } from "embla-carousel/react";
+import { useState, useEffect, useCallback } from "react";
+import { useEmblaCarousel } from "embla-carousel/react";
 
-export default function TestCarousel() {
-  // const [EmblaCarouselReact, embla] = useEmblaCarousel({ loop: false });
-  // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+export default function PortfolioCarousel() {
+  const [EmblaCarouselReact, embla] = useEmblaCarousel({ loop: false });
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
-  // const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  // const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
-  // const onSelect = useCallback(() => {
-  //   if (!embla) return;
-  //   setPrevBtnEnabled(embla.canScrollPrev());
-  //   setNextBtnEnabled(embla.canScrollNext());
-  // }, [embla]);
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const onSelect = useCallback(() => {
+    if (!embla) return;
+    setPrevBtnEnabled(embla.canScrollPrev());
+    setNextBtnEnabled(embla.canScrollNext());
+  }, [embla]);
 
-  // useEffect(() => {
-  //   if (!embla) return;
-  //   embla.on("select", onSelect);
-  //   onSelect();
-  // }, [embla, onSelect]);
+  useEffect(() => {
+    if (!embla) return;
+    embla.on("select", onSelect);
+    onSelect();
+  }, [embla, onSelect]);
 
   return (
     <div className="embla">
-      {/* <EmblaCarouselReact className="embla__viewport">
+      <EmblaCarouselReact className="embla__viewport">
         <div className="embla__slide" style={{ display: "flex" }}>
           <div style={{ minWidth: "100%" }}>
             <div>Slide 1</div>
@@ -53,7 +53,7 @@ export default function TestCarousel() {
         <svg className="embla__button__svg" viewBox="0 0 238.003 238.003">
           <path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z" />
         </svg>
-      </button> */}
+      </button>
     </div>
   );
 }

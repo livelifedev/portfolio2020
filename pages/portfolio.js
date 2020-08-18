@@ -1,5 +1,5 @@
 import Layout from "../src/components/layouts/Layout";
-import { TestCarousel } from "../src/components";
+import PortfolioCarousel from "../src/components/PortfolioCarousel";
 import styles from "./portfolio.module.scss";
 
 export default function Portfolio() {
@@ -14,7 +14,7 @@ export default function Portfolio() {
             my free time, trying out new technology or exploring ideas in my
             head.
           </p>
-          <TestCarousel />
+          <PortfolioCarousel />
         </div>
       </div>
     </Layout>
