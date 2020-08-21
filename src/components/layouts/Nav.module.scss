@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .nav {
-  height: 100px;
+  height: 6rem;
   width: 100%;
   background-color: $secondary;
   display: flex;
@@ -14,8 +14,8 @@
     align-items: center;
 
     img {
-      height: 45px;
-      padding-left: 40px;
+      height: 3.5rem;
+      padding-left: 2.5rem;
     }
 
     span {

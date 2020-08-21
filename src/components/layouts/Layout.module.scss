@@ -1,52 +1,41 @@
 @import "variables.scss";
 
 .layout {
-  // min-height: 100vh;
-  // padding: 0 0.5rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-
   .main {
     display: flex;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 6rem);
     background-color: $secondary;
 
     .title {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: end;
-      flex: 0 1 15%;
-      background-color: $secondary;
+      flex: 0 0 6.5rem;
+      // background-color: $primary;
 
       h1 {
         margin: 0;
-        padding-left: $margin-spacing;
+        padding-left: $spacing;
         transform: rotate(90deg);
         transform-origin: 0 0;
         position: absolute;
-        left: 100px;
+        left: 6.5rem;
         text-transform: uppercase;
         font-size: 4rem;
       }
     }
 
     .content {
-      flex: 0 1 85%;
-      padding: $margin-spacing;
+      padding: $spacing;
     }
   }
 
   .social {
     position: fixed;
-    bottom: 20px;
-    left: 40px;
+    bottom: 2rem;
+    left: 2rem;
 
     img {
       display: block;
-      width: 40px;
+      width: 2.5rem;
+      margin-bottom: 0.4rem;
     }
   }
 }
