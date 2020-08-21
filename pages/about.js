@@ -7,28 +7,33 @@ export default function About() {
   const [selectedHobby, setSelectedHobby] = useState();
   const hobbies = [
     {
+      icon: "laptop.svg",
       name: "Technology",
       description:
         "I'm fascinated by how technology shapes the world, how fast it's progressing. I'm excited in the possibilities.",
     },
-    { name: "Drawing", description: "" },
+    { icon: "pencil.svg", name: "Drawing", description: "" },
     {
+      icon: "sun.svg",
       name: "Summer",
       description:
         "My favourite season, love the sun, love the beach, love chilling in a hammock on a tropical island.",
     },
-    { name: "Morning Coffee", description: "" },
+    { icon: "coffee.svg", name: "Morning Coffee", description: "" },
     {
+      icon: "beer.svg",
       name: "Social Drinks",
       description:
         "Beers, maybe a rum and coke, some pub food, a good bunch of friends. It makes for a perfect pastime.",
     },
     {
+      icon: "mountain.svg",
       name: "Hiking",
       description:
         "Walking in nature, breathing in fresh air and being rewarded with beautiful scenery. Absolutely magical.",
     },
     {
+      icon: "travel.svg",
       name: "Travel",
       description:
         "So many diverse countries and cultures, meeting people from all walks of life, it's an experience I'll always cherish.",
@@ -68,13 +73,14 @@ export default function About() {
         </div>
         <div className={styles.hobbies}>
           <h2>Things I like</h2>
-          <div>
+          <ul>
             {hobbies.map((hobby, index) => (
-              <span key={hobby.name} onClick={() => setSelectedHobby(index)}>
-                {hobby.name}
-              </span>
+              <li key={hobby.name} onClick={() => setSelectedHobby(index)}>
+                {/* {hobby.name} */}
+                <img src={`/hobbies/${hobby.icon}`} />
+              </li>
             ))}
-          </div>
+          </ul>
           <p>{selectedHobby != null && hobbies[selectedHobby].description}</p>
         </div>
       </div>

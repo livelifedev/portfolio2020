@@ -29,6 +29,27 @@
     border-radius: 100%;
     background-color: $primary;
   }
+
+  .hobbies {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      max-width: 80%;
+    }
+
+    li {
+      background-color: $primary;
+      flex: 1;
+      border-radius: 100%;
+      padding: 2vmin;
+      margin-right: 1vmin;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
