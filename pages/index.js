@@ -8,7 +8,9 @@ export default function Home() {
         <div>
           <div>
             <h2>I am a Web Developer.</h2>
-            <p>I build things.</p>
+            <p>
+              I build things. I break things. I make it daily duty to do so.
+            </p>
           </div>
           <div>
             <h3>Latest.</h3>
