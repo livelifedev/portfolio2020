@@ -40,6 +40,10 @@ export default function About() {
     },
   ];
 
+  const handleHobbyClick = (value) => {
+    value == selectedHobby ? setSelectedHobby() : setSelectedHobby(value);
+  };
+
   return (
     <Layout title="About">
       <div className={styles.about}>
@@ -75,7 +79,11 @@ export default function About() {
           <h2>Things I like</h2>
           <ul>
             {hobbies.map((hobby, index) => (
-              <li key={hobby.name} onClick={() => setSelectedHobby(index)}>
+              <li
+                key={hobby.name}
+                onClick={() => handleHobbyClick(index)}
+                className={index == selectedHobby ? styles.active : ""}
+              >
                 {/* {hobby.name} */}
                 <img src={`/hobbies/${hobby.icon}`} />
               </li>

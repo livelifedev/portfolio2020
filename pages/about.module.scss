@@ -35,19 +35,27 @@
       display: flex;
       list-style: none;
       padding: 0;
-      max-width: 80%;
     }
 
     li {
+      cursor: pointer;
       background-color: $primary;
-      flex: 1;
+      opacity: 60%;
+      flex: 0 1 4rem;
       border-radius: 100%;
-      padding: 2vmin;
-      margin-right: 1vmin;
+      margin-right: 2vmin;
+
+      &:hover {
+        opacity: 100%;
+      }
 
       img {
         width: 100%;
       }
+    }
+
+    .active {
+      opacity: 100%;
     }
   }
 }
