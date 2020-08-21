@@ -36,23 +36,28 @@
       flex-wrap: wrap;
       list-style: none;
       padding: 0;
+      margin-bottom: 0;
     }
 
     li {
       margin-right: 2vmin;
       margin-bottom: 2vmin;
-      width: 6rem;
+      flex-basis: 6rem;
       opacity: 60%;
+
+      &:hover {
+        opacity: 100%;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
     }
 
     .iconWrapper {
       cursor: pointer;
       background-color: $primary;
       border-radius: 100%;
-
-      &:hover {
-        opacity: 100%;
-      }
 
       img {
         width: 100%;

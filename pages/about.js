@@ -3,7 +3,6 @@ import Layout from "../src/components/layouts/Layout";
 import styles from "./about.module.scss";
 
 export default function About() {
-  const [showHobbyText, setHobbyText] = useState("");
   const [selectedHobby, setSelectedHobby] = useState();
   const hobbies = [
     {
@@ -86,13 +85,7 @@ export default function About() {
           </div>
         </div>
         <div className={styles.hobbies}>
-          <h2>Things I like...</h2>
-          {selectedHobby != null && (
-            <>
-              {/* <h4>{hobbies[selectedHobby].name}</h4> */}
-              <p>{hobbies[selectedHobby].description}</p>
-            </>
-          )}
+          <h2>Things I like</h2>
           <ul>
             {hobbies.map((hobby, index) => (
               <li
@@ -110,7 +103,11 @@ export default function About() {
                 </div>
               </li>
             ))}
+            <div className="divider" />
           </ul>
+          <p>
+            {selectedHobby == null ? "..." : hobbies[selectedHobby].description}
+          </p>
         </div>
       </div>
     </Layout>
