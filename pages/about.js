@@ -12,17 +12,27 @@ export default function About() {
       description:
         "I'm fascinated by how technology shapes the world, how fast it's progressing. I'm excited in the possibilities.",
     },
-    { icon: "pencil.svg", name: "Drawing", description: "" },
+    {
+      icon: "pencil.svg",
+      name: "Drawing",
+      description:
+        "I've always had a big imagination, drawing gives me the ability to express it visually and share with others.",
+    },
     {
       icon: "sun.svg",
       name: "Summer",
       description:
         "My favourite season, love the sun, love the beach, love chilling in a hammock on a tropical island.",
     },
-    { icon: "coffee.svg", name: "Morning Coffee", description: "" },
+    {
+      icon: "coffee.svg",
+      name: "Coffee",
+      description:
+        "Taking a stroll to the cafe and grabbing a cappuccino is the best way to start the day.",
+    },
     {
       icon: "beer.svg",
-      name: "Social Drinks",
+      name: "Drinks",
       description:
         "Beers, maybe a rum and coke, some pub food, a good bunch of friends. It makes for a perfect pastime.",
     },
@@ -76,7 +86,13 @@ export default function About() {
           </div>
         </div>
         <div className={styles.hobbies}>
-          <h2>Things I like</h2>
+          <h2>Things I like...</h2>
+          {selectedHobby != null && (
+            <>
+              {/* <h4>{hobbies[selectedHobby].name}</h4> */}
+              <p>{hobbies[selectedHobby].description}</p>
+            </>
+          )}
           <ul>
             {hobbies.map((hobby, index) => (
               <li
@@ -84,12 +100,17 @@ export default function About() {
                 onClick={() => handleHobbyClick(index)}
                 className={index == selectedHobby ? styles.active : ""}
               >
-                {/* {hobby.name} */}
-                <img src={`/hobbies/${hobby.icon}`} />
+                <div className={styles.iconWrapper}>
+                  <img src={`/hobbies/${hobby.icon}`} />
+                </div>
+                <div className={styles.iconLabel}>
+                  <span className={index != selectedHobby ? styles.hide : ""}>
+                    {hobbies[index].name}
+                  </span>
+                </div>
               </li>
             ))}
           </ul>
-          <p>{selectedHobby != null && hobbies[selectedHobby].description}</p>
         </div>
       </div>
     </Layout>
