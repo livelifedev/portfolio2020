@@ -106,7 +106,7 @@ export default function About() {
             <div className="divider" />
           </ul>
           <p>
-            {selectedHobby == null ? "..." : hobbies[selectedHobby].description}
+            {selectedHobby == null ? "" : hobbies[selectedHobby].description}
           </p>
         </div>
       </div>
