@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.welcomeWrapper}>
           <div>
-            <h2>I am a Web Developer</h2>
+            <h2>I'm a Web Developer</h2>
             <p>I build things.</p>
             <p>I break things.</p>
             <p>I make it daily duty to do so.</p>
@@ -22,10 +22,13 @@ export default function Home() {
         </div>
         <div className={styles.mascotWrapper}>
           {light && <div className={styles.lightGlow} />}
-          <img src="/logo.svg" alt="Logo" />
+          <img src="/logo.svg" alt="Logo" className={light ? "" : styles.dim} />
           <div
             className={styles.lightSwitch}
-            onClick={() => setLight((prev) => !prev)}
+            onClick={(event) => {
+              console.log(event);
+              setLight((prev) => !prev);
+            }}
           ></div>
         </div>
       </div>

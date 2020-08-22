@@ -42,4 +42,29 @@
 }
 
 @media (max-width: 600px) {
+  .layout {
+    .main {
+      .title {
+        flex: 0 0 4.5rem;
+
+        h1 {
+          left: 3.5rem;
+          font-size: 2rem;
+          padding-left: 4vmin;
+        }
+      }
+
+      .content {
+        padding: 4vmin;
+      }
+    }
+
+    .social {
+      left: 1rem;
+
+      img {
+        width: 2rem;
+      }
+    }
+  }
 }
