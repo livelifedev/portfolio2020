@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div>
             <h3>Latest.</h3>
-            <p>Link to latest update</p>
+            <a>Link to latest update</a>
           </div>
         </div>
         <div className={styles.mascotWrapper}>
