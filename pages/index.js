@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Layout from "../src/components/layouts/Layout";
 import styles from "./index.module.scss";
 
 export default function Home() {
+  const [light, setLight] = useState(false);
+
   return (
     <Layout title="Welcome">
       <div className={styles.home}>
@@ -17,11 +20,13 @@ export default function Home() {
             <p>Link to latest update</p>
           </div>
         </div>
-        <div className={styles.switchButton}>
-          <button>Turn it on</button>
-        </div>
         <div className={styles.mascotWrapper}>
+          {light && <div className={styles.lightGlow} />}
           <img src="/logo.svg" alt="Logo" />
+          <div
+            className={styles.lightSwitch}
+            onClick={() => setLight((prev) => !prev)}
+          ></div>
         </div>
       </div>
     </Layout>
