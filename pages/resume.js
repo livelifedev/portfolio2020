@@ -18,7 +18,6 @@ export default function Resume() {
     "Ruby",
     "Ruby on Rails",
     "Git",
-    "Agile",
   ];
 
   return (

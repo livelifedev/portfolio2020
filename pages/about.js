@@ -99,20 +99,16 @@ export default function About() {
                 <div className={styles.iconWrapper}>
                   <img src={`/hobbies/${hobby.icon}`} />
                 </div>
-                {/* <div className={styles.iconLabel}>
-                  <span className={index != selectedHobby ? styles.hide : ""}>
-                    {hobbies[index].name}
-                  </span>
-                </div> */}
               </li>
             ))}
             <div className="divider" />
           </ul>
           {selectedHobby != null && (
             <p>
-              <span>{hobbies[selectedHobby].name}:</span>
-              <span>{hobbies[selectedHobby].description}</span>
-              {/* {selectedHobby == null ? "" : hobbies[selectedHobby].description} */}
+              <span className={styles.iconLabel}>
+                {hobbies[selectedHobby].name}:
+              </span>
+              <span> {hobbies[selectedHobby].description}</span>
             </p>
           )}
         </div>

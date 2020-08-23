@@ -19,7 +19,7 @@
 
   .bioText {
     flex: 2;
-    padding: 0 2rem;
+    padding: 0 0 0 2rem;
   }
 
   .placeholder {
@@ -30,6 +30,8 @@
   }
 
   .hobbies {
+    margin-top: 2rem;
+
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -50,7 +52,7 @@
     }
 
     p {
-      font-size: 1.2rem;
+      letter-spacing: 1px;
     }
 
     .iconWrapper {
@@ -63,16 +65,17 @@
       }
     }
 
-    .iconLabel {
-      text-align: center;
-    }
-
     .active {
       opacity: 100%;
     }
 
     .hide {
       visibility: hidden;
+    }
+
+    .iconLabel {
+      color: $primary;
+      font-weight: bolder;
     }
   }
 }
@@ -89,7 +92,8 @@
     }
 
     .bioText {
-      padding: 2rem 0;
+      padding: 0;
+      margin: 2rem 0;
     }
 
     .hobbies {

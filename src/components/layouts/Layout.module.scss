@@ -68,3 +68,13 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .layout {
+    .main {
+      .content {
+        padding-right: 10%;
+      }
+    }
+  }
+}
