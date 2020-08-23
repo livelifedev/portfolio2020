@@ -12,7 +12,7 @@
 
       h1 {
         margin: 0;
-        padding-left: $spacing;
+        padding-left: 4rem;
         transform: rotate(90deg);
         transform-origin: 0 0;
         position: absolute;
@@ -24,7 +24,7 @@
 
     .content {
       flex: 1;
-      padding: $spacing;
+      padding: 4rem;
     }
   }
 
@@ -50,12 +50,12 @@
         h1 {
           left: 3.5rem;
           font-size: 2rem;
-          padding-left: 8vmin;
+          padding-left: 2rem;
         }
       }
 
       .content {
-        padding: 8vmin 4vmin;
+        padding: 2rem;
       }
     }
 

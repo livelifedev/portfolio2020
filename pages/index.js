@@ -20,16 +20,12 @@ export default function Home() {
             <a>Link to latest update</a>
           </div>
         </div>
-        <div className={styles.mascotWrapper}>
+        <div
+          className={styles.mascotWrapper}
+          onClick={() => setLight((prev) => !prev)}
+        >
           {light && <div className={styles.lightGlow} />}
           <img src="/logo.svg" alt="Logo" className={light ? "" : styles.dim} />
-          <div
-            className={styles.lightSwitch}
-            onClick={(event) => {
-              console.log(event);
-              setLight((prev) => !prev);
-            }}
-          ></div>
         </div>
       </div>
     </Layout>

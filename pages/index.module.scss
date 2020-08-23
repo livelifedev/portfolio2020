@@ -16,14 +16,16 @@
     flex: 1;
     min-width: 10rem;
     max-height: 70vh;
-    display: flex;
     align-items: center;
-    margin-bottom: 8vmin;
+    margin-bottom: 2rem;
 
     img {
       height: 100%;
-      // width: 100%;
-      flex: 1;
+      width: 100%;
+
+      &:hover {
+        opacity: 100%;
+      }
     }
   }
 
@@ -35,21 +37,6 @@
     position: absolute;
     top: -1rem;
     border-radius: 100%;
-  }
-
-  .lightSwitch {
-    background: $primary;
-    opacity: 60%;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
-    cursor: pointer;
-    z-index: 1;
-    flex-shrink: 0;
-
-    &:hover {
-      opacity: 100%;
-    }
   }
 
   .dim {
