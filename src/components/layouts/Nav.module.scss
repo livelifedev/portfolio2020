@@ -27,6 +27,7 @@
   ul {
     list-style: none;
     color: $primary;
+    padding-right: 2.5rem;
   }
 
   li {
@@ -37,8 +38,14 @@
 
 @media (max-width: 600px) {
   .nav {
+    .logoHeader {
+      img {
+        padding-left: 1.5rem;
+      }
+    }
+
     ul {
-      // display: none;
+      padding-right: 1.5rem;
     }
   }
 }

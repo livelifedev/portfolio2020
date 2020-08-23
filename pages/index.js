@@ -11,9 +11,11 @@ export default function Home() {
         <div className={styles.welcomeWrapper}>
           <div>
             <h2>I'm a Web Developer</h2>
-            <p>I build things.</p>
-            <p>I break things.</p>
-            <p>I make it daily duty to do so.</p>
+            <div className={light ? "" : styles.dim}>
+              <p>I build things.</p>
+              <p>I break things.</p>
+              <p>I make it daily duty to do so.</p>
+            </div>
           </div>
           <div>
             <h3>Latest.</h3>
@@ -31,5 +33,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-//inspire, create, learn. solve, flip the switch
