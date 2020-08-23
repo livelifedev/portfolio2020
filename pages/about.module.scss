@@ -77,5 +77,25 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .about {
+    .profile {
+      display: block;
+    }
+
+    .profilePhoto {
+      img {
+      }
+    }
+
+    .bioText {
+      padding: 2rem 0;
+    }
+
+    .hobbies {
+      li {
+        flex-basis: 3rem;
+      }
+    }
+  }
 }

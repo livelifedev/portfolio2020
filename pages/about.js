@@ -74,9 +74,12 @@ export default function About() {
               Growing up I’ve always indulged myself in my imagination, doodling
               away on pieces of paper creating what was in my mind. Then when
               the family got our first computer spent countless hours tinkering
-              away, breaking then fixing it. Long story short, I’d always had a
-              love for art and technology, plus the curiosity to experiment with
-              things and see what I could do with them.
+              away, breaking then fixing it.
+            </p>
+            <p>
+              Long story short, I’d always had a love for art and technology,
+              plus the curiosity to experiment with things and see what I could
+              do with them.
             </p>
             <p>
               Now I'm pursuing that love of technology and seeing where the
@@ -96,18 +99,22 @@ export default function About() {
                 <div className={styles.iconWrapper}>
                   <img src={`/hobbies/${hobby.icon}`} />
                 </div>
-                <div className={styles.iconLabel}>
+                {/* <div className={styles.iconLabel}>
                   <span className={index != selectedHobby ? styles.hide : ""}>
                     {hobbies[index].name}
                   </span>
-                </div>
+                </div> */}
               </li>
             ))}
             <div className="divider" />
           </ul>
-          <p>
-            {selectedHobby == null ? "" : hobbies[selectedHobby].description}
-          </p>
+          {selectedHobby != null && (
+            <p>
+              <span>{hobbies[selectedHobby].name}:</span>
+              <span>{hobbies[selectedHobby].description}</span>
+              {/* {selectedHobby == null ? "" : hobbies[selectedHobby].description} */}
+            </p>
+          )}
         </div>
       </div>
     </Layout>
