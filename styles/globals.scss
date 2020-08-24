@@ -25,9 +25,27 @@ a {
   box-sizing: border-box;
 }
 
+.externalLink {
+  color: $textcolor;
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
 .divider {
   border-bottom: solid 2px $primary;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.is-dragging {
+  cursor: grabbing;
 }

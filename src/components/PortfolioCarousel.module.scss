@@ -5,12 +5,8 @@
 }
 
 .emblaViewport {
-  cursor: move;
-  cursor: grab;
-}
-
-.emblaViewportIsDragging {
-  cursor: grabbing;
+  overflow: hidden;
+  width: 100%;
 }
 
 .emblaButton {

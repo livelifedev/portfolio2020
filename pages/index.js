@@ -19,7 +19,14 @@ export default function Home() {
           </div>
           <div>
             <h3>Latest.</h3>
-            <a>Updated portfolio website.</a>
+            <a
+              className="externalLink"
+              href="https://johnrubio.tech/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Updated portfolio website.
+            </a>
           </div>
         </div>
         <div
