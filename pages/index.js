@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <div>
             <h3>Latest.</h3>
-            <a>Link to latest update</a>
+            <a>Updated portfolio website.</a>
           </div>
         </div>
         <div

@@ -28,7 +28,7 @@ export default function Contact() {
         <div>
           <h2>Send an Email</h2>
           <p>Feel free to contact me, my Email address is:</p>
-          <h3 className={styles.emailAddress}>johnrubio93@gmail.com</h3>
+          <p className={styles.emailAddress}>johnrubio93@gmail.com</p>
           <p>
             You can use the form below to pre-fill your default Email client.
           </p>

@@ -2,11 +2,13 @@
 
 .contact {
   .emailAddress {
-    // color: $primary;
-    margin-bottom: 2rem;
+    font-weight: bolder;
+    margin: 1rem 0 2rem;
+    color: $primary;
   }
 
   form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 4rem 2rem;
@@ -22,6 +24,7 @@
       background-color: transparent;
       border: none;
       border-bottom: solid 1px $primary;
+      color: $textcolor;
     }
 
     input {
@@ -54,9 +57,23 @@
     color: $secondary;
     border: none;
     border-radius: 0.2rem;
-    // align-self: center;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .contact {
+    form {
+      padding-right: 0;
+      padding-left: 1rem;
+
+      input,
+      textarea {
+        font-size: 0.8rem;
+      }
+    }
+
+    .formGroup {
+      flex-direction: column;
+    }
+  }
 }
