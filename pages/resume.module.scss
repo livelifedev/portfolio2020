@@ -23,6 +23,7 @@
 
   .experience > div:first-child {
     margin-right: 4rem;
+    margin-bottom: 2rem;
   }
 
   .experience {
@@ -64,7 +65,7 @@
 
     .education {
       background-color: $primary;
-      padding: 2rem;
+      padding: 0.5rem 2rem 2rem;
       border-radius: 0.2rem;
     }
   }
@@ -74,7 +75,6 @@
   .resume {
     .experience > div:first-child {
       margin-right: 0;
-      margin-bottom: 2rem;
     }
 
     .experience {
