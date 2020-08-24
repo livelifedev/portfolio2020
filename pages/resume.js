@@ -63,7 +63,7 @@ export default function Resume() {
 
           <div>
             <h2>Education</h2>
-            <div className={styles.resume}>
+            <div className={styles.education}>
               <div>
                 <h3>Coder Academy</h3>
                 <p>Diploma of IT in Web Development</p>
