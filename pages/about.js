@@ -101,8 +101,8 @@ export default function About() {
                 </div>
               </li>
             ))}
-            <div className="divider" />
           </ul>
+          <div className="divider" />
           {selectedHobby != null && (
             <p>
               <span className={styles.iconLabel}>
