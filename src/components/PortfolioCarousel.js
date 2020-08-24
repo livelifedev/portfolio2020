@@ -25,7 +25,15 @@ export default function PortfolioCarousel() {
       <EmblaCarouselReact className="embla__viewport">
         <div className="embla__slide" style={{ display: "flex" }}>
           <div style={{ minWidth: "100%" }}>
-            <div>Slide 1</div>
+            <div className="embla__item embla__card1">
+              <span>Slide 1</span>
+            </div>
+            <div className="embla__item embla__card2">
+              <p>
+                <a>GitHub</a>
+                <a>Deployed</a>
+              </p>
+            </div>
           </div>
           <div style={{ minWidth: "100%" }}>Slide 2</div>
           <div style={{ minWidth: "100%" }}>Slide 3</div>

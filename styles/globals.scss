@@ -26,7 +26,7 @@ a {
 }
 
 .divider {
-  border-bottom: solid 0.1rem $primary;
+  border-bottom: solid 2px $primary;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -34,11 +34,6 @@ a {
 
 .embla {
   position: relative;
-  // background-color: #f7f7f7;
-  // padding: 20px;
-  // max-width: 670px;
-  // margin-left: auto;
-  // margin-right: auto;
 }
 
 .embla__viewport {
@@ -51,11 +46,32 @@ a {
 }
 
 .embla__slide > div {
-  background-color: crimson;
+  background-color: $primary;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.embla__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.embla__card1 {
+  background-color: $primary;
+}
+
+.embla__card2 {
+  background-color: $secondary;
+  border: 2px solid $primary;
+
+  a {
+    display: block;
+  }
 }
 
 .embla__button {
@@ -92,4 +108,18 @@ a {
 
 .embla__button--next {
   right: 27px;
+}
+
+@media (max-width: 800px) {
+  .embla__slide > div {
+    flex-direction: column;
+  }
+
+  .embla__button--prev {
+    left: 0;
+  }
+
+  .embla__button--next {
+    right: 0;
+  }
 }
