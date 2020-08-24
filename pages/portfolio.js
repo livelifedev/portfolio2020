@@ -14,7 +14,23 @@ export default function Portfolio() {
             projects I've done to try out new technologies or explore ideas in
             my head.
           </p>
-          <PortfolioCarousel />
+          <PortfolioCarousel>
+            <div className={styles.slide} style={{ display: "flex" }}>
+              <div style={{ minWidth: "100%" }}>
+                <div className={`${styles.slideItem} ${styles.card1}`}>
+                  <span>Slide 1</span>
+                </div>
+                <div className={`${styles.slideItem} ${styles.card2}`}>
+                  <p>
+                    <a>GitHub</a>
+                    <a>Deployed</a>
+                  </p>
+                </div>
+              </div>
+              <div style={{ minWidth: "100%" }}>Slide 2</div>
+              <div style={{ minWidth: "100%" }}>Slide 3</div>
+            </div>
+          </PortfolioCarousel>
         </div>
       </div>
     </Layout>

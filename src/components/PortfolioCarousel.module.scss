@@ -1,0 +1,60 @@
+@import "variables.scss";
+
+.embla {
+  position: relative;
+}
+
+.emblaViewport {
+  cursor: move;
+  cursor: grab;
+}
+
+.emblaViewportIsDragging {
+  cursor: grabbing;
+}
+
+.emblaButton {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: $textcolor;
+  padding: 0;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+.emblaButtonSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.emblaButtonPrev {
+  left: 27px;
+}
+
+.emblaButtonNext {
+  right: 27px;
+}
+
+@media (max-width: 800px) {
+  .emblaButtonPrev {
+    left: 0;
+  }
+
+  .emblaButtonNext {
+    right: 0;
+  }
+}

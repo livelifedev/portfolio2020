@@ -2,8 +2,43 @@
 
 .portfolio {
   .projects {
+    .slide > div {
+      background-color: $primary;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slideItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card1 {
+      background-color: $primary;
+    }
+
+    .card2 {
+      background-color: $secondary;
+      border: 2px solid $primary;
+
+      a {
+        display: block;
+      }
+    }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .portfolio {
+    .projects {
+      .slide > div {
+        flex-direction: column;
+      }
+    }
+  }
 }
