@@ -31,14 +31,14 @@ export default function Portfolio() {
       deployed: "https://nutrition-demo-app.herokuapp.com/",
     },
     {
-      title: "Dog Training Website (Team Project)",
+      title: "Dog Training Website",
       github: "https://github.com/livelifedev/dogs-react",
       github2: "https://github.com/livelifedev/dogs-express",
       deployed:
         "http://react-keep-static.s3-website-ap-southeast-2.amazonaws.com/",
     },
     {
-      title: "Student Digital Library (Team Project)",
+      title: "Student Digital Library",
       github: "https://github.com/livelifedev/team-cool",
       deployed: "https://lib-u.herokuapp.com/",
     },
@@ -61,12 +61,14 @@ export default function Portfolio() {
                 <div className={styles.embla__slide__inner}>
                   <div className={styles.embla__slide__img}>
                     <div
-                      className={`${styles.embla__slide__item} ${styles.card1}`}
+                      className={`${styles.embla__slide__item} ${
+                        styles["id" + index]
+                      }`}
                     >
                       <span>{x.title}</span>
                     </div>
                     <div
-                      className={`${styles.embla__slide__item} ${styles.card2}`}
+                      className={`${styles.embla__slide__item} ${styles.textCard}`}
                     >
                       <div>
                         <a

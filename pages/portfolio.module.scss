@@ -2,13 +2,32 @@
 
 .portfolio {
   .projects {
-    .card1 {
+    .id0 {
+      border: 2px solid $textcolor;
+    }
+    .id1 {
       background-color: $primary;
     }
+    .id2 {
+      background-color: #67c23a;
+    }
+    .id3 {
+      background-color: #151719;
+    }
+    .id4 {
+      background-color: #d92c41;
+    }
+    .id5 {
+      background-color: #3273dc;
+    }
+    .id6 {
+      background-color: #679289;
+    }
 
-    .card2 {
+    .textCard {
       background-color: $secondary;
       border: 2px solid $primary;
+      border-left: none;
 
       a {
         display: block;
