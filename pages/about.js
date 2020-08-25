@@ -27,7 +27,7 @@ export default function About() {
       icon: "coffee.svg",
       name: "Coffee",
       description:
-        "Taking a stroll to the cafe and grabbing a cappuccino is the best way to start the day.",
+        "Taking a stroll to the local cafe and grabbing a cappuccino is the best way to start the day.",
     },
     {
       icon: "beer.svg",

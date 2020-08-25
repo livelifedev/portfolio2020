@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.welcomeWrapper}>
           <div>
-            <h2>I'm a Web Developer</h2>
+            <h2>Hi, I'm a Web Developer</h2>
             <div className={light ? "" : styles.dim}>
               <p>I build things.</p>
               <p>I break things.</p>

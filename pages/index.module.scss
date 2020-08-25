@@ -6,6 +6,7 @@
 
   .welcomeWrapper {
     flex: 1;
+    min-width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,7 +49,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .home {
     .welcomeWrapper {
       p {

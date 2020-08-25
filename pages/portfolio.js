@@ -52,8 +52,8 @@ export default function Portfolio() {
           <p>Highlights of my time studying web development -</p>
           <p>
             Some are from my early days as a beginner and others are side
-            projects I've done to try out new technologies or explore ideas in
-            my head.
+            projects I've done to explore different technologies and fun ideas
+            floating around in my head.
           </p>
           <EmblaCarousel>
             {projects.map((x, index) => (
