@@ -18,9 +18,12 @@ export default function Nav() {
         <span>&#8636;</span>
       </div>
       <nav className={`${styles.menu} ${menuIsOpen ? styles.menuActive : ""}`}>
-        <button className={styles.button} onClick={() => setMenuIsOpen(false)}>
+        <div
+          className={styles.closeButton}
+          onClick={() => setMenuIsOpen(false)}
+        >
           <span>&#8640;</span>
-        </button>
+        </div>
         <ul>
           <li>
             <Link href="/about">
