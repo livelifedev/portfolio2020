@@ -4,6 +4,7 @@ import styles from "./Nav.module.scss";
 
 export default function Nav() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <header className={styles.nav}>
       <Link href="/">
@@ -47,6 +48,8 @@ export default function Nav() {
           </li>
         </ul>
       </nav>
+
+      {menuIsOpen && <div className={styles.shadow} />}
     </header>
   );
 }

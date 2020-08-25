@@ -61,6 +61,15 @@
     padding: 1rem 0 0 1rem;
     cursor: pointer;
   }
+
+  .shadow {
+    position: fixed;
+    top: 0;
+    background: rgba($color: #000000, $alpha: 0.2);
+    height: 100%;
+    width: 100%;
+    z-index: 998;
+  }
 }
 
 @media (max-width: 620px) {
