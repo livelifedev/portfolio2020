@@ -35,3 +35,13 @@
 .embla__buttonNext {
   right: 27px;
 }
+
+@media (max-width: 600px) {
+  .embla__buttonPrev {
+    left: 0;
+  }
+
+  .embla__buttonNext {
+    right: 0;
+  }
+}

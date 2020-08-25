@@ -62,10 +62,10 @@ export default function Portfolio() {
                   <div className={styles.embla__slide__img}>
                     <div
                       className={`${styles.embla__slide__item} ${
-                        styles["id" + index]
-                      }`}
+                        styles.imageCard
+                      } ${styles["id" + index]}`}
                     >
-                      <span>{x.title}</span>
+                      <h4>{x.title}</h4>
                     </div>
                     <div
                       className={`${styles.embla__slide__item} ${styles.textCard}`}
