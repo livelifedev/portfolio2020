@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import { useEmblaCarousel } from "embla-carousel/react";
+import styles from "./EmblaCarousel.module.scss";
 
 const EmblaCarousel = ({ children }) => {
   const [EmblaCarouselReact, embla] = useEmblaCarousel();
@@ -22,9 +23,9 @@ const EmblaCarousel = ({ children }) => {
   }, [embla, onSelect]);
 
   return (
-    <div className="embla">
-      <EmblaCarouselReact className="embla__viewport">
-        <div className="embla__container">{children}</div>
+    <div className={styles.embla}>
+      <EmblaCarouselReact className={styles.embla__viewport}>
+        <div className={styles.embla__container}>{children}</div>
       </EmblaCarouselReact>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
