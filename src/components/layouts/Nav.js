@@ -1,7 +1,9 @@
+import { useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
 
 export default function Nav() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   return (
     <header className={styles.nav}>
       <Link href="/">
@@ -12,7 +14,13 @@ export default function Nav() {
           </div>
         </a>
       </Link>
-      <nav className={styles.menu}>
+      <div className={styles.openButton} onClick={() => setMenuIsOpen(true)}>
+        <span>&#8636;</span>
+      </div>
+      <nav className={`${styles.menu} ${menuIsOpen ? styles.menuActive : ""}`}>
+        <button className={styles.button} onClick={() => setMenuIsOpen(false)}>
+          <span>&#8640;</span>
+        </button>
         <ul>
           <li>
             <Link href="/about">

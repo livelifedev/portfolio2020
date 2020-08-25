@@ -26,58 +26,62 @@
 
   .menu {
     color: $primary;
-    // position: fixed;
-    // // display: none;
-    // // right: -12rem;
-    // right: 0;
-    // top: 0;
-    // height: 100%;
-    // width: 12rem;
-    // overflow-x: visible;
-    // overflow-y: auto;
-    // transition: left 0.3s ease;
-    // z-index: 999;
-    // background-color: $primary;
-    // color: $textcolor;
-
-    // ul {
-    //   display: flex;
-    //   height: 100%;
-    //   max-height: 14rem;
-    //   flex-flow: column nowrap;
-    //   align-items: flex-end;
-    //   justify-content: space-between;
-
-    //   li {
-    //     display: block;
-    //   }
-    // }
   }
 
   ul {
     list-style: none;
-    padding-right: 2.5rem;
+    padding: 0 2.5rem 0 0;
   }
 
   li {
     display: inline-block;
-    padding-right: 15px;
+    padding-left: 1rem;
+  }
+
+  .openButton {
+    display: none;
+    margin-right: 1.5rem;
+    padding-top: 0.4rem;
+    font-size: 2rem;
+    color: $primary;
+    cursor: pointer;
+    opacity: 60%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  .button {
+    display: none;
+    background-color: inherit;
+    border: none;
+    color: $textcolor;
+    font-size: 2rem;
+    padding: 1rem 0 0 1rem;
+    cursor: pointer;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .nav {
+    .openButton {
+      display: block;
+    }
+
+    .button {
+      display: block;
+    }
+
     .menu {
       position: fixed;
-      // display: none;
-      // right: -12rem;
-      right: 0;
+      right: -12rem;
       top: 0;
       height: 100%;
       width: 12rem;
       overflow-x: visible;
       overflow-y: auto;
-      transition: left 0.3s ease;
+      transition: right 0.3s ease;
       z-index: 999;
       background-color: $primary;
       color: $textcolor;
@@ -89,11 +93,11 @@
         flex-flow: column nowrap;
         align-items: flex-end;
         justify-content: space-between;
-
-        li {
-          display: block;
-        }
       }
+    }
+
+    .menuActive {
+      right: 0;
     }
 
     .logoHeader {
