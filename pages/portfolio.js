@@ -1,5 +1,6 @@
 import Layout from "../src/components/layouts/Layout";
 import PortfolioCarousel from "../src/components/PortfolioCarousel";
+import EmblaCarousel from "../src/components/EmblaCarousel";
 import styles from "./portfolio.module.scss";
 
 export default function Portfolio() {
@@ -43,6 +44,8 @@ export default function Portfolio() {
       deployed: "https://lib-u.herokuapp.com/",
     },
   ];
+  const SLIDE_COUNT = 10;
+  const slides = Array.from(Array(SLIDE_COUNT).keys());
 
   return (
     <Layout title="Portfolio">
@@ -55,7 +58,50 @@ export default function Portfolio() {
             projects I've done to try out new technologies or explore ideas in
             my head.
           </p>
-          <PortfolioCarousel>
+          <EmblaCarousel>
+            {slides.map((index) => (
+              <div className="embla__slide" key={index}>
+                <div className="embla__slide__inner">
+                  <div className="embla__slide__img">
+                    <div className={`emblaSlideItem ${styles.card1}`}>
+                      <span>{"x.title"}</span>
+                    </div>
+                    <div className={`emblaSlideItem ${styles.card2}`}>
+                      <div>
+                        <a
+                          className="externalLink"
+                          // href={x.github}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                        >
+                          GitHub{"x.github2" && "(FE)"}
+                        </a>
+                        {"x.github2" && (
+                          <a
+                            className="externalLink"
+                            // href={x.github2}
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                          >
+                            GitHub(BE)
+                          </a>
+                        )}
+                        <a
+                          className="externalLink"
+                          // href={x.deployed}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                        >
+                          Deployed
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </EmblaCarousel>
+          {/* <PortfolioCarousel>
             <div className={styles.slide}>
               {projects.map((x) => (
                 <div>
@@ -95,7 +141,7 @@ export default function Portfolio() {
                 </div>
               ))}
             </div>
-          </PortfolioCarousel>
+          </PortfolioCarousel> */}
         </div>
       </div>
     </Layout>
