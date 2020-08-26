@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "../src/components/layouts/Layout";
+import Logo from "../src/components/Logo";
 import styles from "./index.module.scss";
 
 export default function Home() {
@@ -34,7 +35,9 @@ export default function Home() {
           onClick={() => setLight((prev) => !prev)}
         >
           {light && <div className={styles.lightGlow} />}
-          <img src="/logo.svg" alt="Logo" className={light ? "" : styles.dim} />
+          <div className={`${styles.logo} ${light ? "" : styles.dim}`}>
+            <Logo />
+          </div>
         </div>
       </div>
     </Layout>

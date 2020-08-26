@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Logo from "../Logo";
 import styles from "./Nav.module.scss";
 
 export default function Nav() {
@@ -10,7 +11,9 @@ export default function Nav() {
       <Link href="/">
         <a>
           <div className={styles.logoHeader}>
-            <img src="/logo.svg" alt="Logo" />
+            <div className={styles.logo}>
+              <Logo />
+            </div>
             <span>John Rubio</span>
           </div>
         </a>

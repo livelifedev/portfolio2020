@@ -24,14 +24,14 @@
     max-height: 70vh;
     align-items: center;
     margin-bottom: 2rem;
+  }
 
-    img {
-      height: 100%;
-      width: 100%;
+  .logo {
+    height: 100%;
+    width: 100%;
 
-      &:hover {
-        opacity: 100%;
-      }
+    &:hover {
+      opacity: 100%;
     }
   }
 
