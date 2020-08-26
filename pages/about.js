@@ -1,48 +1,57 @@
 import { useState } from "react";
 import Layout from "../src/components/layouts/Layout";
+import {
+  Beer,
+  Coffee,
+  Laptop,
+  Mountain,
+  Pencil,
+  Sun,
+  Travel,
+} from "../src/components/HobbyIcons";
 import styles from "./about.module.scss";
 
 export default function About() {
   const [selectedHobby, setSelectedHobby] = useState();
   const hobbies = [
     {
-      icon: "laptop.svg",
+      icon: <Laptop />,
       name: "Technology",
       description:
         "I'm fascinated by how technology shapes the world, how fast it's progressing. I'm excited in the possibilities.",
     },
     {
-      icon: "pencil.svg",
+      icon: <Pencil />,
       name: "Drawing",
       description:
         "I've always had a big imagination, drawing gives me the ability to express it visually and share with others.",
     },
     {
-      icon: "sun.svg",
+      icon: <Sun />,
       name: "Summer",
       description:
         "My favourite season, love the sun, love the beach, love chilling in a hammock on a tropical island.",
     },
     {
-      icon: "coffee.svg",
+      icon: <Coffee />,
       name: "Coffee",
       description:
         "Taking a stroll to the local cafe and grabbing a cappuccino is the best way to start the day.",
     },
     {
-      icon: "beer.svg",
+      icon: <Beer />,
       name: "Drinks",
       description:
         "Beers, maybe a rum and coke, some pub food, a good bunch of friends. It makes for a perfect pastime.",
     },
     {
-      icon: "mountain.svg",
+      icon: <Mountain />,
       name: "Hiking",
       description:
         "Walking in nature, breathing in fresh air and being rewarded with beautiful scenery. Absolutely magical.",
     },
     {
-      icon: "travel.svg",
+      icon: <Travel />,
       name: "Travel",
       description:
         "So many diverse countries and cultures, meeting people from all walks of life, it's an experience I'll always cherish.",
@@ -96,9 +105,7 @@ export default function About() {
                 onClick={() => handleHobbyClick(index)}
                 className={index == selectedHobby ? styles.active : ""}
               >
-                <div className={styles.iconWrapper}>
-                  <img src={`/hobbies/${hobby.icon}`} />
-                </div>
+                <div className={styles.iconWrapper}>{hobby.icon}</div>
               </li>
             ))}
           </ul>
