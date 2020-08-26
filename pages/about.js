@@ -102,10 +102,14 @@ export default function About() {
             {hobbies.map((hobby, index) => (
               <li
                 key={hobby.name}
-                onClick={() => handleHobbyClick(index)}
                 className={index == selectedHobby ? styles.active : ""}
               >
-                <div className={styles.iconWrapper}>{hobby.icon}</div>
+                <button
+                  className={styles.iconWrapper}
+                  onClick={() => handleHobbyClick(index)}
+                >
+                  {hobby.icon}
+                </button>
               </li>
             ))}
           </ul>
