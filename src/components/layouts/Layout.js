@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -10,8 +9,13 @@ export default function Layout({ title, children }) {
   return (
     <div className={styles.layout}>
       <Head>
-        <title>John Rubio - Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>"John Rubio - Portfolio"</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="My personal website as a web developer."
+        />
       </Head>
 
       <Nav />
