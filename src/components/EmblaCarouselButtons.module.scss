@@ -24,17 +24,18 @@
   .embla__button__svg {
     width: 100%;
     height: 100%;
+    fill: $textcolor;
+    stroke: $primary;
+    stroke-width: 8;
   }
 }
 
 .embla__buttonPrev {
   left: 27px;
-  fill: $textcolor;
 }
 
 .embla__buttonNext {
   right: 27px;
-  fill: $primary;
 }
 
 @media (max-width: 600px) {

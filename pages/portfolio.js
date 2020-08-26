@@ -67,6 +67,7 @@ export default function Portfolio() {
                     >
                       <h4>{x.title}</h4>
                     </div>
+
                     <div
                       className={`${styles.embla__slide__item} ${styles.textCard}`}
                     >

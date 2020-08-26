@@ -116,6 +116,7 @@
         flex-flow: column nowrap;
         align-items: flex-end;
         justify-content: space-between;
+        padding-right: 1.5rem;
       }
     }
 
@@ -127,10 +128,6 @@
       .logo {
         padding-left: 1.5rem;
       }
-    }
-
-    ul {
-      padding-right: 1.5rem;
     }
   }
 }
