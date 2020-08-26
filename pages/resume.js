@@ -32,7 +32,7 @@ export default function Resume() {
           <ul>
             {skills.map((skill) => (
               <li className={styles.skillItems} key={skill}>
-                {skill}
+                <span className="forceColor">{skill}</span>
               </li>
             ))}
           </ul>

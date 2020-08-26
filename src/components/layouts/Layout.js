@@ -11,11 +11,7 @@ export default function Layout({ title, children }) {
   const lightThemeOn = query.light === "true";
 
   return (
-    <div
-      className={`${lightThemeOn ? styles.light : styles.dark} ${
-        styles.layout
-      }`}
-    >
+    <div className={`${lightThemeOn ? "light" : "dark"} ${styles.layout}`}>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>John Rubio - Portfolio</title>

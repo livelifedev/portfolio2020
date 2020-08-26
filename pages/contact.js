@@ -60,7 +60,7 @@ export default function Contact() {
               onChange={() => setBody(event.target.value)}
             />
             <input
-              className={styles.submit}
+              className={`forceColor ${styles.submit}`}
               type="submit"
               value="Create Email"
             />

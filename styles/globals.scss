@@ -70,3 +70,17 @@ svg {
 .is-dragging {
   cursor: grabbing;
 }
+
+.dark {
+  color: $textcolor;
+  background-color: $secondary;
+}
+
+.light {
+  color: $primary;
+  background-color: $textcolor;
+
+  .forceColor {
+    color: $primary !important;
+  }
+}

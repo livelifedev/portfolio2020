@@ -1,20 +1,5 @@
 @import "variables.scss";
 
-.dark {
-  color: $textcolor;
-  background-color: $secondary;
-}
-
-.light {
-  color: $primary;
-  background-color: $textcolor;
-  // svg {
-  //   path {
-  //     // fill: $secondary;
-  //   }
-  // }
-}
-
 .lightIcons {
   path {
     fill: $primary;
