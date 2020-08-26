@@ -31,7 +31,8 @@
     bottom: 2rem;
     left: 2rem;
 
-    div {
+    a {
+      display: block;
       width: 2.5rem;
     }
   }
@@ -58,7 +59,7 @@
     .social {
       left: 1rem;
 
-      div {
+      a {
         width: 2rem;
       }
     }

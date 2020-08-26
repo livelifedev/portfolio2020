@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -19,14 +20,20 @@ export default function Layout({ title, children }) {
         <section className={styles.title}>
           <h1>{title}</h1>
           <div className={styles.social}>
-            {/* <img src="/linkedin.svg" alt="LinkedIn Logo" />
-            <img src="/github.svg" alt="GitHub Logo" /> */}
-            <div>
+            <a
+              href="https://www.linkedin.com/in/john-m-rubio/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
               <LinkedInIcon />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://github.com/livelifedev"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
               <GitHubIcon />
-            </div>
+            </a>
           </div>
         </section>
         <section className={styles.content}>{children}</section>
