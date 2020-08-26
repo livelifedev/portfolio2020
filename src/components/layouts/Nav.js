@@ -1,42 +1,34 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import Logo from "../Logo";
 import styles from "./Nav.module.scss";
 
-export default function Nav() {
+export default function Nav({ lightThemeOn, currentPath }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const { pathname, push } = useRouter();
-
-  const handleClick = (e, path) => {
-    e.preventDefault();
-    push(path);
-  };
-
-  const pageLink = (href, name) => {
-    return (
-      <a
-        href={href}
-        onClick={(e) => handleClick(e, href)}
-        className={pathname == href ? styles.active : ""}
-      >
-        {name}
-      </a>
-    );
-  };
+  const navLinks = [
+    { name: "About", path: "/about" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Resume", path: "/resume" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <header className={styles.nav}>
-      <a href="/" onClick={(e) => handleClick(e, "/")}>
-        <div className={styles.logoHeader}>
-          <div className={styles.logo}>
-            <Logo />
+      <Link href={{ pathname: "/", query: { light: !!lightThemeOn } }}>
+        <a>
+          <div className={styles.logoHeader}>
+            <div className={styles.logo}>
+              <Logo />
+            </div>
+            <span>John Rubio</span>
           </div>
-          <span>John Rubio</span>
-        </div>
-      </a>
+        </a>
+      </Link>
+
       <button className={styles.openButton} onClick={() => setMenuIsOpen(true)}>
         <span>&#8636;</span>
       </button>
+
       <nav className={`${styles.menu} ${menuIsOpen ? styles.menuActive : ""}`}>
         <button
           className={styles.closeButton}
@@ -44,11 +36,19 @@ export default function Nav() {
         >
           <span>&#8640;</span>
         </button>
+
         <ul>
-          <li>{pageLink("/about", "About")}</li>
-          <li>{pageLink("/portfolio", "Portfolio")}</li>
-          <li>{pageLink("/resume", "Resume")}</li>
-          <li>{pageLink("/contact", "Contact")}</li>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={{ pathname: link.path, query: { light: !!lightThemeOn } }}
+              >
+                <a className={currentPath == link.path ? styles.active : ""}>
+                  {link.name}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
 

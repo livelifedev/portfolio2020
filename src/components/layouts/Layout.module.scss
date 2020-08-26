@@ -1,5 +1,15 @@
 @import "variables.scss";
 
+.dark {
+  color: $textcolor;
+  background-color: $secondary;
+}
+
+.light {
+  color: $primary;
+  background-color: $textcolor;
+}
+
 .layout {
   .main {
     display: flex;

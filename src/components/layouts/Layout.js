@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -6,8 +7,15 @@ import LinkedInIcon from "../LinkedInIcon";
 import styles from "./Layout.module.scss";
 
 export default function Layout({ title, children }) {
+  const { pathname, query } = useRouter();
+  const lightThemeOn = query.light === "true";
+
   return (
-    <div className={styles.layout}>
+    <div
+      className={`${lightThemeOn ? styles.light : styles.dark} ${
+        styles.layout
+      }`}
+    >
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>John Rubio - Portfolio</title>
@@ -18,7 +26,7 @@ export default function Layout({ title, children }) {
         />
       </Head>
 
-      <Nav />
+      <Nav lightThemeOn={lightThemeOn} currentPath={pathname} />
 
       <main className={styles.main}>
         <section className={styles.title}>
@@ -40,6 +48,7 @@ export default function Layout({ title, children }) {
             </a>
           </div>
         </section>
+
         <section className={styles.content}>{children}</section>
       </main>
 
