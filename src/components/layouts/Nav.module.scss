@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .nav {
+  user-select: none;
   height: 6rem;
   width: 100%;
   display: flex;
@@ -70,8 +71,6 @@
 
   .closeButton {
     display: none;
-    background-color: inherit;
-    border: none;
     color: $textcolor;
     font-size: 2rem;
     padding: 1rem 0 0 1rem;

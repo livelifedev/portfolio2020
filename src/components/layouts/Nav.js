@@ -34,16 +34,16 @@ export default function Nav() {
           <span>John Rubio</span>
         </div>
       </a>
-      <div className={styles.openButton} onClick={() => setMenuIsOpen(true)}>
+      <button className={styles.openButton} onClick={() => setMenuIsOpen(true)}>
         <span>&#8636;</span>
-      </div>
+      </button>
       <nav className={`${styles.menu} ${menuIsOpen ? styles.menuActive : ""}`}>
-        <div
+        <button
           className={styles.closeButton}
           onClick={() => setMenuIsOpen(false)}
         >
           <span>&#8640;</span>
-        </div>
+        </button>
         <ul>
           <li>{pageLink("/about", "About")}</li>
           <li>{pageLink("/portfolio", "Portfolio")}</li>
