@@ -55,6 +55,7 @@ export default function Portfolio() {
             projects I've done to explore different technologies and fun ideas
             floating around in my head.
           </p>
+
           <EmblaCarousel>
             {projects.map((x, index) => (
               <div className={styles.embla__slide} key={index}>
@@ -105,6 +106,17 @@ export default function Portfolio() {
               </div>
             ))}
           </EmblaCarousel>
+
+          <p>
+            You can check out my personal GitHub{" "}
+            <a
+              href="https://github.com/livelifedev"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              @livelifedev
+            </a>
+          </p>
         </div>
       </div>
     </Layout>

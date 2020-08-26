@@ -45,6 +45,15 @@
         display: block;
       }
     }
+
+    p:last-child {
+      margin-top: 2rem;
+
+      a {
+        color: $primary;
+        font-weight: bolder;
+      }
+    }
   }
 }
 
