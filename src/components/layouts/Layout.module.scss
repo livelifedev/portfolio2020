@@ -4,11 +4,9 @@
   .main {
     display: flex;
     min-height: calc(100vh - 6rem);
-    background-color: $secondary;
 
     .title {
       flex: 0 0 6.5rem;
-      // background-color: $primary;
 
       h1 {
         margin: 0;
@@ -33,10 +31,8 @@
     bottom: 2rem;
     left: 2rem;
 
-    img {
-      display: block;
+    div {
       width: 2.5rem;
-      margin-bottom: 0.4rem;
     }
   }
 }
@@ -62,7 +58,7 @@
     .social {
       left: 1rem;
 
-      img {
+      div {
         width: 2rem;
       }
     }
