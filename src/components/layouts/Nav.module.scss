@@ -28,6 +28,7 @@
   }
 
   .menu {
+    font-weight: 500;
     color: $primary;
   }
 
@@ -39,6 +40,18 @@
   li {
     display: inline-block;
     padding-left: 1rem;
+
+    a {
+      opacity: 60%;
+
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  .active {
+    opacity: 100%;
   }
 
   .openButton {
