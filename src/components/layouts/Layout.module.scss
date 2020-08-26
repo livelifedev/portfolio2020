@@ -8,6 +8,17 @@
 .light {
   color: $primary;
   background-color: $textcolor;
+  // svg {
+  //   path {
+  //     // fill: $secondary;
+  //   }
+  // }
+}
+
+.lightIcons {
+  path {
+    fill: $primary;
+  }
 }
 
 .layout {

@@ -29,10 +29,6 @@
   .logo {
     height: 100%;
     width: 100%;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   .lightGlow {
@@ -47,6 +43,10 @@
 
   .dim {
     opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

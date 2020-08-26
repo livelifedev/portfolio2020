@@ -8,21 +8,27 @@
     }
     .id1 {
       background-color: $primary;
+      color: $textcolor;
     }
     .id2 {
       background-color: #42b983;
+      color: $textcolor;
     }
     .id3 {
       background-color: #151719;
+      color: $textcolor;
     }
     .id4 {
       background-color: #d92c41;
+      color: $textcolor;
     }
     .id5 {
       background-color: #3273dc;
+      color: $textcolor;
     }
     .id6 {
       background-color: #679289;
+      color: $textcolor;
     }
 
     .imageCard {
@@ -34,6 +40,7 @@
       border: 2px solid $primary;
       border-left: none;
       border-radius: 4px;
+      // background-color: $secondary;
 
       a {
         display: block;

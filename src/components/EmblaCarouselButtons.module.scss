@@ -14,7 +14,6 @@
   height: 30px;
   justify-content: center;
   align-items: center;
-  fill: $textcolor;
   padding: 0;
 
   &:disabled {
@@ -30,10 +29,12 @@
 
 .embla__buttonPrev {
   left: 27px;
+  fill: $textcolor;
 }
 
 .embla__buttonNext {
   right: 27px;
+  fill: $primary;
 }
 
 @media (max-width: 600px) {
