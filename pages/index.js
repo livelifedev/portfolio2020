@@ -23,7 +23,7 @@ export default function Home() {
             <div className={lightThemeOn ? "" : styles.dim}>
               <p>I build things.</p>
               <p>I break things.</p>
-              <p>I make it daily duty to do so.</p>
+              <p>I make it my daily duty to do so.</p>
             </div>
           </div>
           <div>
