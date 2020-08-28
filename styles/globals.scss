@@ -72,13 +72,11 @@ svg {
 }
 
 .dark {
-  transition: color 0.2s, background-color 0.3s;
   color: $textcolor;
   background-color: $secondary;
 }
 
 .light {
-  transition: color 0.3s, background-color 0.2s;
   color: $primary;
   background-color: $textcolor;
 
