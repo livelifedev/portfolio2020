@@ -27,11 +27,7 @@ export default function Layout({ title, children }) {
       <main className={styles.main}>
         <section className={styles.title}>
           <h1>{title}</h1>
-          <div
-            className={`${lightThemeOn ? styles.lightIcons : ""} ${
-              styles.social
-            }`}
-          >
+          <div className={styles.social}>
             <a
               href="https://www.linkedin.com/in/john-m-rubio/"
               target="_blank"
