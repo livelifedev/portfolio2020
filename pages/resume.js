@@ -70,7 +70,7 @@ export default function Resume() {
               </div>
               <div>
                 <h3>Team Treehouse</h3>
-                <p>Front End Web Development Track</p>
+                <p>Front-End Web Development Track</p>
               </div>
               <div>
                 <h3>SAE Institute</h3>
