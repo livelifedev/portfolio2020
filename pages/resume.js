@@ -1,25 +1,25 @@
 import Layout from "../src/components/layouts/Layout";
 import styles from "./resume.module.scss";
 
-export default function Resume() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Responsive Design",
-    "React",
-    "Angular",
-    "Vue.js",
-    "Node.js",
-    "REST",
-    "GraphQL",
-    "MongoDB",
-    "PostgreSQL",
-    "Ruby",
-    "Ruby on Rails",
-    "Git",
-  ];
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Responsive Design",
+  "React",
+  "Angular",
+  "Vue.js",
+  "Node.js",
+  "REST",
+  "GraphQL",
+  "MongoDB",
+  "PostgreSQL",
+  "Ruby",
+  "Ruby on Rails",
+  "Git",
+];
 
+export default function Resume() {
   return (
     <Layout title="Resume">
       <div className={styles.resume}>

@@ -11,52 +11,53 @@ import {
 } from "../src/components/HobbyIcons";
 import styles from "./about.module.scss";
 
+const hobbies = [
+  {
+    icon: <Laptop />,
+    name: "Technology",
+    description:
+      "I'm fascinated by how technology shapes the world, how fast it's progressing. I'm excited in the possibilities.",
+  },
+  {
+    icon: <Pencil />,
+    name: "Drawing",
+    description:
+      "I've always had a big imagination, drawing gives me the ability to express it visually and share with others.",
+  },
+  {
+    icon: <Sun />,
+    name: "Summer",
+    description:
+      "My favourite season, love the sun, love the beach, love chilling in a hammock on a tropical island.",
+  },
+  {
+    icon: <Coffee />,
+    name: "Coffee",
+    description:
+      "Taking a stroll to the local cafe and grabbing a cappuccino is the best way to start the day.",
+  },
+  {
+    icon: <Beer />,
+    name: "Drinks",
+    description:
+      "Beers, maybe a rum and coke, some pub food, a good bunch of friends. It makes for a perfect pastime.",
+  },
+  {
+    icon: <Mountain />,
+    name: "Hiking",
+    description:
+      "Walking in nature, breathing in fresh air and being rewarded with beautiful scenery. Absolutely magical.",
+  },
+  {
+    icon: <Travel />,
+    name: "Travel",
+    description:
+      "So many diverse countries and cultures, meeting people from all walks of life, it's an experience I'll always cherish.",
+  },
+];
+
 export default function About() {
   const [selectedHobby, setSelectedHobby] = useState();
-  const hobbies = [
-    {
-      icon: <Laptop />,
-      name: "Technology",
-      description:
-        "I'm fascinated by how technology shapes the world, how fast it's progressing. I'm excited in the possibilities.",
-    },
-    {
-      icon: <Pencil />,
-      name: "Drawing",
-      description:
-        "I've always had a big imagination, drawing gives me the ability to express it visually and share with others.",
-    },
-    {
-      icon: <Sun />,
-      name: "Summer",
-      description:
-        "My favourite season, love the sun, love the beach, love chilling in a hammock on a tropical island.",
-    },
-    {
-      icon: <Coffee />,
-      name: "Coffee",
-      description:
-        "Taking a stroll to the local cafe and grabbing a cappuccino is the best way to start the day.",
-    },
-    {
-      icon: <Beer />,
-      name: "Drinks",
-      description:
-        "Beers, maybe a rum and coke, some pub food, a good bunch of friends. It makes for a perfect pastime.",
-    },
-    {
-      icon: <Mountain />,
-      name: "Hiking",
-      description:
-        "Walking in nature, breathing in fresh air and being rewarded with beautiful scenery. Absolutely magical.",
-    },
-    {
-      icon: <Travel />,
-      name: "Travel",
-      description:
-        "So many diverse countries and cultures, meeting people from all walks of life, it's an experience I'll always cherish.",
-    },
-  ];
 
   const handleHobbyClick = (value) => {
     value == selectedHobby ? setSelectedHobby() : setSelectedHobby(value);

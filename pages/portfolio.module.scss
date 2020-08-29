@@ -1,58 +1,56 @@
 @import "variables.scss";
 
 .portfolio {
-  .projects {
-    .id0 {
-      background-color: $primary;
-      color: $secondary;
-    }
-    .id1 {
-      background-color: $primary;
-      color: $textcolor;
-    }
-    .id2 {
-      background-color: #42b983;
-      color: $textcolor;
-    }
-    .id3 {
-      background-color: #151719;
-      color: $textcolor;
-    }
-    .id4 {
-      background-color: #d92c41;
-      color: $textcolor;
-    }
-    .id5 {
-      background-color: #3273dc;
-      color: $textcolor;
-    }
-    .id6 {
-      background-color: #679289;
-      color: $textcolor;
-    }
+  .id0 {
+    background-color: $primary;
+    color: $secondary;
+  }
+  .id1 {
+    background-color: $primary;
+    color: $textcolor;
+  }
+  .id2 {
+    background-color: #42b983;
+    color: $textcolor;
+  }
+  .id3 {
+    background-color: #151719;
+    color: $textcolor;
+  }
+  .id4 {
+    background-color: #d92c41;
+    color: $textcolor;
+  }
+  .id5 {
+    background-color: #3273dc;
+    color: $textcolor;
+  }
+  .id6 {
+    background-color: #679289;
+    color: $textcolor;
+  }
 
-    .imageCard {
-      border-radius: 4px;
-      font-size: 1.2rem;
+  .imageCard {
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+
+  .textCard {
+    border: 2px solid $primary;
+    border-left: none;
+    border-radius: 4px;
+
+    a {
+      display: block;
     }
+  }
 
-    .textCard {
-      border: 2px solid $primary;
-      border-left: none;
-      border-radius: 4px;
+  p:last-child {
+    margin-top: 2rem;
 
-      a {
-        display: block;
-      }
-    }
-
-    p:last-child {
-      margin-top: 2rem;
-
-      a {
-        color: $primary;
-        font-weight: bolder;
-      }
+    a {
+      color: $primary;
+      font-weight: bolder;
     }
   }
 }
@@ -94,16 +92,14 @@
   }
 
   .portfolio {
-    .projects {
-      .imageCard {
-        border-radius: 4px;
-        font-size: 1rem;
-      }
+    .imageCard {
+      border-radius: 4px;
+      font-size: 1rem;
+    }
 
-      .textCard {
-        border-left: 2px solid $primary;
-        border-top: none;
-      }
+    .textCard {
+      border-left: 2px solid $primary;
+      border-top: none;
     }
   }
 }
