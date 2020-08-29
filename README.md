@@ -1,8 +1,6 @@
 WIP - Portfolio redesign
 
-Deployed -
-https://johnrubiodev.vercel.app/
-https://johnrubio.tech/
+Deployed - https://johnrubio.tech/
 
 To do:
 
