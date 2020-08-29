@@ -14,6 +14,7 @@ const reducer = (state, action) => {
     case "updateFieldValue":
       return { ...state, [action.field]: action.value };
 
+    case "reset":
     default:
       return INITIAL_STATE;
   }
@@ -34,7 +35,7 @@ export default function Contact() {
     event.preventDefault();
     const query = `?subject=[${state.firstName} ${state.lastName}] ${state.subject}&body=${state.body}`;
     location.href = `mailto:johnrubio93@gmail.com${query}`;
-    dispatch({});
+    dispatch({ type: "reset" });
   };
 
   return (
