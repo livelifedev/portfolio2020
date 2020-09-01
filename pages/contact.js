@@ -91,30 +91,35 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="First Name"
+                required
                 value={state.firstName}
                 onChange={updateFieldValue("firstName")}
               />
               <input
                 type="text"
                 placeholder="Last Name"
+                required
                 value={state.lastName}
                 onChange={updateFieldValue("lastName")}
               />
             </div>
             <input
               type="email"
-              placeholder="Email"
+              placeholder="your@email.com"
+              required
               value={state.email}
               onChange={updateFieldValue("email")}
             />
             <input
               type="text"
               placeholder="Subject"
+              required
               value={state.subject}
               onChange={updateFieldValue("subject")}
             />
             <textarea
               placeholder="What is on your mind?"
+              required
               value={state.body}
               onChange={updateFieldValue("body")}
             />
