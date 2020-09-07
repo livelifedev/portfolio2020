@@ -41,6 +41,11 @@ const projects = [
     github: "https://github.com/livelifedev/team-cool",
     deployed: "https://lib-u.herokuapp.com/",
   },
+  {
+    title: "Web Player",
+    github: "https://github.com/livelifedev/web-player",
+    deployed: "https://johnrdev.github.io/",
+  },
 ];
 
 export default function Portfolio() {
