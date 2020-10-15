@@ -43,8 +43,12 @@ export default function Resume() {
             <h2>Experience</h2>
             <ul className={styles.timeline}>
               <li>
+                <h3>Modern Star (2020 - Present)</h3>
+                <p>Full-Time - Web Developer</p>
+              </li>
+              <li>
                 <h3>Aetherworks (2020 - Present)</h3>
-                <p>Contract - Front-End Developer</p>
+                <p>Contract - Software Developer</p>
               </li>
               <li>
                 <h3>SMATA Technologies (2019 - 2020)</h3>
