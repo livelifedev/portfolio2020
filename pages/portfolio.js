@@ -5,7 +5,7 @@ import styles from "./portfolio.module.scss";
 const projects = [
   {
     title: "Portfolio 2020",
-    github: "https://github.com/livelifedev/portfolio2020",
+    github: "https://github.com/livelifedev",
     deployed: "https://livelifedev.github.io/",
   },
   {
