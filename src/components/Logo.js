@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281.06 507.15">
-      <g fill="none" stroke="#e94716" strokeMiterlimit="10">
+      <g fill="none" stroke="#E63E20" strokeMiterlimit="10">
         <path
           d="M140.52 443.08c16.05 0 48.44 1.15 67.58-22.5s27-60.82 62.5-238.2C296.47 53.06 224.47 30.28 176 20.77 159.84 17.59 171.5 5 140.52 5s-19.32 12.59-35.47 15.77C56.58 30.28-15.42 53.06 10.44 182.38c35.48 177.38 43.37 214.55 62.51 238.2s51.52 22.5 67.57 22.5z"
           strokeWidth="10"
@@ -15,7 +15,7 @@ export default function Logo() {
           strokeWidth="7"
         />
       </g>
-      <g fill="none" stroke="#e94716" strokeWidth="6">
+      <g fill="none" stroke="#E63E20" strokeWidth="6">
         <path
           d="M119.92 443.09s-3-38.15 5.15-59.55c3.61-9.48-7-33.42-7-33.42S131.67 338 141.45 338s23.27 12.12 23.27 12.12-10.63 23.94-7 33.42c8.14 21.4 5.15 59.55 5.15 59.55"
           strokeLinejoin="bevel"

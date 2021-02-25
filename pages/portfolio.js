@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Portfolio 2020",
     github: "https://github.com/livelifedev",
-    deployed: "https://livelifedev.github.io/",
+    deployed: "https://livelifedev.github.io/portfolio2020",
   },
   {
     title: "Portfolio 2019",
