@@ -4,6 +4,12 @@ import styles from "./portfolio.module.scss";
 
 const projects = [
   {
+    title: "Ecommerce Website",
+    github: "https://github.com/livelifedev/home-edvantage",
+    github2: "https://github.com/livelifedev/home-edvantage-cms-stable",
+    deployed: "https://home-edvantage-prototype.vercel.app/",
+  },
+  {
     title: "Portfolio 2020",
     github: "https://github.com/livelifedev",
     deployed: "https://livelifedev.github.io/portfolio2020",
