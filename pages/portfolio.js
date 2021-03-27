@@ -10,8 +10,13 @@ const projects = [
     deployed: "https://home-edvantage-prototype.vercel.app/",
   },
   {
+    title: "Responsive Layout",
+    github: "https://github.com/livelifedev/responsive-vanilla",
+    deployed: "https://vanilla-responsive.netlify.app",
+  },
+  {
     title: "Portfolio 2020",
-    github: "https://github.com/livelifedev",
+    github: "https://github.com/livelifedev/portfolio2020",
     deployed: "https://livelifedev.github.io/portfolio2020",
   },
   {

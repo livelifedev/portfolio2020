@@ -30,11 +30,11 @@ export default function Home() {
             <h3>Latest.</h3>
             <a
               className="externalLink"
-              href="https://johnrubio.tech/"
+              href="https://github.com/livelifedev/responsive-vanilla"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              Updated portfolio website.
+              WIP new website.
             </a>
           </div>
         </div>
