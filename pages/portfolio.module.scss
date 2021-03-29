@@ -3,7 +3,7 @@
 .portfolio {
   .id0 {
     background-color: #2b6cb0;
-    color: $secondary;
+    color: textcolor;
   }
   .id1 {
     background-color: #3a0842;
@@ -14,26 +14,30 @@
     color: $textcolor;
   }
   .id3 {
-    background-color: #42b983;
+    background-color: $primary;
     color: $textcolor;
   }
   .id4 {
-    background-color: #151719;
+    background-color: #42b983;
     color: $textcolor;
   }
   .id5 {
-    background-color: #d92c41;
+    background-color: #151719;
     color: $textcolor;
   }
   .id6 {
-    background-color: #3273dc;
+    background-color: #d92c41;
     color: $textcolor;
   }
   .id7 {
-    background-color: #679289;
+    background-color: #3273dc;
     color: $textcolor;
   }
   .id8 {
+    background-color: #679289;
+    color: $textcolor;
+  }
+  .id9 {
     background-color: #49274a;
     color: $textcolor;
   }
