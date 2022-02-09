@@ -57,7 +57,7 @@ const hobbies = [
 ];
 
 export default function About() {
-  const [selectedHobby, setSelectedHobby] = useState();
+  const [selectedHobby, setSelectedHobby] = useState(0);
 
   const handleHobbyClick = (value) => {
     value == selectedHobby ? setSelectedHobby() : setSelectedHobby(value);
@@ -81,13 +81,13 @@ export default function About() {
             </p>
             <p>A little history about myself…</p>
             <p>
-              Growing up I’ve always indulged myself in my imagination, doodling
+              Growing up I've always indulged myself in my imagination, doodling
               away on pieces of paper creating what was in my mind. Then when
-              the family got our first computer spent countless hours tinkering
-              away, breaking then fixing it.
+              the family got our first computer - spent countless hours
+              tinkering away, breaking then fixing it.
             </p>
             <p>
-              Long story short, I’d always had a love for art and technology,
+              Long story short, I'd always had a love for art and technology,
               plus the curiosity to experiment with things and see what I could
               do with them.
             </p>
@@ -107,6 +107,7 @@ export default function About() {
               >
                 <button
                   className={styles.iconWrapper}
+                  aria-label={hobby.name}
                   onClick={() => handleHobbyClick(index)}
                 >
                   {hobby.icon}

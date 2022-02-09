@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.welcomeWrapper}>
           <div>
-            <h2>Hi, I'm a Web Developer</h2>
+            <h2>Hi, I'm a Software Engineer</h2>
             <div>
               <p>I build things.</p>
               <p>I break things.</p>
@@ -21,7 +21,6 @@ export default function Home() {
               className="externalLink"
               href="https://github.com/livelifedev/responsive-vanilla"
               target="_blank"
-              rel="nofollow noopener noreferrer"
             >
               WIP new website.
             </a>

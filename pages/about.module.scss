@@ -60,6 +60,7 @@
       cursor: pointer;
       background-color: $primary;
       border-radius: 100%;
+      padding: 1rem;
 
       svg {
         display: block;
@@ -96,6 +97,10 @@
       li {
         flex-basis: 3rem;
         margin-right: 0.5rem;
+      }
+
+      .iconWrapper {
+        padding: 0.5rem;
       }
     }
   }

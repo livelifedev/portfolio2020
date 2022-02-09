@@ -105,7 +105,7 @@ export default function Contact() {
             </div>
             <input
               type="email"
-              placeholder="your@email.com"
+              placeholder="Your@email.com"
               required
               value={state.email}
               onChange={updateFieldValue("email")}
@@ -123,7 +123,7 @@ export default function Contact() {
               value={state.body}
               onChange={updateFieldValue("body")}
             />
-            <button type="submit" className={`forceColor ${styles.submit}`}>
+            <button type="submit" className={styles.submit}>
               Message
             </button>
           </form>

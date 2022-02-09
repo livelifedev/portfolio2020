@@ -13,11 +13,11 @@
   }
 
   .skillItems {
-    background-color: $textcolor;
-    color: $secondary;
+    color: $primary;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem 0.5rem 0;
     cursor: default;
+    border: 1px solid $primary;
     border-radius: 16px;
   }
 

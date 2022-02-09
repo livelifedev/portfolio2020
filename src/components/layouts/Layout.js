@@ -27,10 +27,18 @@ export default function Layout({ title, children }) {
         <section className={styles.title}>
           <h1>{title}</h1>
           <div className={styles.social}>
-            <a href="https://www.linkedin.com/in/john-m-rubio/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/john-m-rubio/"
+              title="LinkedIn"
+              target="_blank"
+            >
               <LinkedInIcon />
             </a>
-            <a href="https://github.com/livelifedev" target="_blank">
+            <a
+              href="https://github.com/livelifedev"
+              title="GitHub"
+              target="_blank"
+            >
               <GitHubIcon />
             </a>
           </div>

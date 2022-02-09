@@ -101,7 +101,6 @@ export default function Portfolio() {
                           className="externalLink"
                           href={x.github2}
                           target="_blank"
-                          rel="nofollow noopener noreferrer"
                         >
                           GitHub(BE)
                         </a>
@@ -110,7 +109,6 @@ export default function Portfolio() {
                         className="externalLink"
                         href={x.deployed}
                         target="_blank"
-                        rel="nofollow noopener noreferrer"
                       >
                         Deployed
                       </a>
@@ -124,11 +122,7 @@ export default function Portfolio() {
 
         <p>
           You can check out my personal GitHub{" "}
-          <a
-            href="https://github.com/livelifedev"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
+          <a href="https://github.com/livelifedev" target="_blank">
             @livelifedev
           </a>
         </p>
