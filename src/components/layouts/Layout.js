@@ -7,11 +7,10 @@ import LinkedInIcon from "../LinkedInIcon";
 import styles from "./Layout.module.scss";
 
 export default function Layout({ title, children }) {
-  const { pathname, query } = useRouter();
-  const lightThemeOn = query.light === "true";
+  const { pathname } = useRouter();
 
   return (
-    <div className={`${lightThemeOn ? "light" : "dark"} ${styles.layout}`}>
+    <div className={styles.layout}>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>John Rubio - Portfolio</title>
@@ -22,24 +21,16 @@ export default function Layout({ title, children }) {
         />
       </Head>
 
-      <Nav lightThemeOn={lightThemeOn} currentPath={pathname} />
+      <Nav currentPath={pathname} />
 
       <main className={styles.main}>
         <section className={styles.title}>
           <h1>{title}</h1>
           <div className={styles.social}>
-            <a
-              href="https://www.linkedin.com/in/john-m-rubio/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/john-m-rubio/" target="_blank">
               <LinkedInIcon />
             </a>
-            <a
-              href="https://github.com/livelifedev"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href="https://github.com/livelifedev" target="_blank">
               <GitHubIcon />
             </a>
           </div>

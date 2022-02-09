@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from "../Logo";
 import styles from "./Nav.module.scss";
 
-export default function Nav({ lightThemeOn, currentPath }) {
+export default function Nav({ currentPath }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const navLinks = [
     { name: "About", path: "/about" },
@@ -14,7 +14,7 @@ export default function Nav({ lightThemeOn, currentPath }) {
 
   return (
     <header className={styles.nav}>
-      <Link href={{ pathname: "/", query: { light: !!lightThemeOn } }}>
+      <Link href={{ pathname: "/" }}>
         <a>
           <div className={styles.logoHeader}>
             <div className={styles.logo}>
@@ -40,9 +40,7 @@ export default function Nav({ lightThemeOn, currentPath }) {
         <ul>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link
-                href={{ pathname: link.path, query: { light: !!lightThemeOn } }}
-              >
+              <Link href={{ pathname: link.path }}>
                 <a className={currentPath == link.path ? styles.active : ""}>
                   {link.name}
                 </a>

@@ -13,9 +13,13 @@ const skills = [
   "REST",
   "GraphQL",
   "MongoDB",
+  "Firebase",
   "PostgreSQL",
+  "MySQL",
+  "PHP",
   "Ruby",
   "Ruby on Rails",
+  "CMS",
   "Git",
 ];
 
@@ -43,24 +47,24 @@ export default function Resume() {
             <h2>Experience</h2>
             <ul className={styles.timeline}>
               <li>
-                <h3>Modern Star (2020 - Present)</h3>
-                <p>Full-Time - Web Developer</p>
-              </li>
-              <li>
                 <h3>Aetherworks (2020 - Present)</h3>
                 <p>Contract - Software Developer</p>
+              </li>
+              <li>
+                <h3>StepInsight (2021 - 2022)</h3>
+                <p>Full-Time - Software Engineer</p>
+              </li>
+              <li>
+                <h3>Modern Star (2020 - 2021)</h3>
+                <p>Full-Time - Web Developer</p>
               </li>
               <li>
                 <h3>SMATA Technologies (2019 - 2020)</h3>
                 <p>Full-Time - Front-End Developer</p>
               </li>
               <li>
-                <h3>Rensa Health (2019)</h3>
-                <p>Contract - Front-End Developer</p>
-              </li>
-              <li>
                 <h3>SafetyCulture (2019)</h3>
-                <p>Internship - Front-End Developer</p>
+                <p>Internship - Front-End Engineer</p>
               </li>
             </ul>
           </div>

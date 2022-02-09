@@ -28,13 +28,11 @@ button {
 
 button,
 button:focus {
-  outline: none;
   background: transparent;
   border: 1px solid transparent;
 }
 
 button:active {
-  outline: none;
   background: transparent;
   border: 0;
 }
