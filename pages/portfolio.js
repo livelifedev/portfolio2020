@@ -15,7 +15,7 @@ const projects = [
     deployed: "https://vanilla-responsive.netlify.app",
   },
   {
-    title: "Portfolio 2020",
+    title: "Portfolio",
     github: "https://github.com/livelifedev/portfolio2020",
     deployed: "https://livelifedev.github.io/portfolio2020",
   },
@@ -92,7 +92,6 @@ export default function Portfolio() {
                         className="externalLink"
                         href={x.github}
                         target="_blank"
-                        rel="nofollow noopener noreferrer"
                       >
                         GitHub{x.github2 && "(FE)"}
                       </a>

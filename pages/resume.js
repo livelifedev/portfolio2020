@@ -10,6 +10,7 @@ const skills = [
   "Angular",
   "Vue.js",
   "Node.js",
+  "TypeScript",
   "REST",
   "GraphQL",
   "MongoDB",
