@@ -25,13 +25,18 @@ export default function Nav({ currentPath }) {
         </a>
       </Link>
 
-      <button className={styles.openButton} onClick={() => setMenuIsOpen(true)}>
+      <button
+        className={styles.openButton}
+        aria-label="Open menu"
+        onClick={() => setMenuIsOpen(true)}
+      >
         <span>&#8636;</span>
       </button>
 
       <nav className={`${styles.menu} ${menuIsOpen ? styles.menuActive : ""}`}>
         <button
           className={styles.closeButton}
+          aria-label="Close menu"
           onClick={() => setMenuIsOpen(false)}
         >
           <span>&#8640;</span>

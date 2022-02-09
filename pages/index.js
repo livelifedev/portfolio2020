@@ -28,6 +28,9 @@ export default function Home() {
         </div>
 
         <div className={styles.mascotWrapper}>
+          <div className={styles.lightGlow}>
+            <h3>I've got bright ideas!</h3>
+          </div>
           <div className={styles.logo}>
             <Logo />
           </div>

@@ -41,6 +41,12 @@
   li {
     display: inline-block;
     padding-left: 1rem;
+
+    a {
+      &:hover {
+        border-bottom: 2px solid $primary;
+      }
+    }
   }
 
   .active {
