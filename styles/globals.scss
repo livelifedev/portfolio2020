@@ -84,3 +84,20 @@ svg {
   color: $primary;
   background-color: $textcolor;
 }
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $primary $textcolor;
+}
+body::-webkit-scrollbar-track {
+  background: $textcolor;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 6px;
+  border: 3px solid $textcolor;
+}
