@@ -19,10 +19,10 @@ export default function Home() {
             <h3>Latest.</h3>
             <a
               className="externalLink"
-              href="https://github.com/livelifedev/responsive-vanilla"
+              href="https://livelifedev.github.io/"
               target="_blank"
             >
-              WIP new website.
+              Been doodling in my sketchbook.
             </a>
           </div>
         </div>

@@ -4,6 +4,11 @@ import styles from "./portfolio.module.scss";
 
 const projects = [
   {
+    title: "My Sketchbook",
+    github: "https://github.com/livelifedev/livelifedev.github.io",
+    deployed: "https://livelifedev.github.io/",
+  },
+  {
     title: "Ecommerce Website",
     github: "https://github.com/livelifedev/home-edvantage",
     github2: "https://github.com/livelifedev/home-edvantage-cms-stable",
@@ -20,20 +25,10 @@ const projects = [
     deployed: "https://livelifedev.github.io/portfolio2020",
   },
   {
-    title: "Portfolio 2019",
-    github: "https://github.com/livelifedev/livelifedev.github.io",
-    deployed: "https://livelifedev.github.io/",
-  },
-  {
     title: "Digital Pet Game",
     github: "https://github.com/livelifedev/pigeon",
     github2: "https://github.com/livelifedev/pigeon-backend",
     deployed: "https://pigeon-guild.herokuapp.com/",
-  },
-  {
-    title: "Story Project",
-    github: "https://github.com/livelifedev/story-project",
-    deployed: "https://story-project.vercel.app/",
   },
   {
     title: "Calorie Tracker",
@@ -46,11 +41,6 @@ const projects = [
     github2: "https://github.com/livelifedev/dogs-express",
     deployed:
       "http://react-keep-static.s3-website-ap-southeast-2.amazonaws.com/",
-  },
-  {
-    title: "Student Digital Library",
-    github: "https://github.com/livelifedev/team-cool",
-    deployed: "https://lib-u.herokuapp.com/",
   },
   {
     title: "Web Player",
