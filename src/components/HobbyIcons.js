@@ -1,4 +1,5 @@
-const textColor = "#e5e3df";
+const textColor = "#fff1d5";
+// const textColor = "#e5e3df";
 
 export const Beer = () => (
   <svg
