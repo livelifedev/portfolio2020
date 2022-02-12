@@ -4,15 +4,15 @@ import styles from "./portfolio.module.scss";
 
 const projects = [
   {
-    title: "My Sketchbook",
-    github: "https://github.com/livelifedev/livelifedev.github.io",
-    deployed: "https://livelifedev.github.io/",
-  },
-  {
     title: "Ecommerce Website",
     github: "https://github.com/livelifedev/home-edvantage",
     github2: "https://github.com/livelifedev/home-edvantage-cms-stable",
     deployed: "https://home-edvantage-prototype.vercel.app/",
+  },
+  {
+    title: "My Sketchbook",
+    github: "https://github.com/livelifedev/livelifedev.github.io",
+    deployed: "https://livelifedev.github.io/",
   },
   {
     title: "Responsive Layout",
@@ -34,13 +34,6 @@ const projects = [
     title: "Calorie Tracker",
     github: "https://github.com/livelifedev/food-nutri-v2",
     deployed: "https://nutrition-demo-app.herokuapp.com/",
-  },
-  {
-    title: "Dog Training Website",
-    github: "https://github.com/livelifedev/dogs-react",
-    github2: "https://github.com/livelifedev/dogs-express",
-    deployed:
-      "http://react-keep-static.s3-website-ap-southeast-2.amazonaws.com/",
   },
   {
     title: "Web Player",
